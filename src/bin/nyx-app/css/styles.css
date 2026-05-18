@@ -1,0 +1,206 @@
+window .initialstate {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 8px;
+  background-color: @dark_4;
+}
+
+window.info .maincontent {
+  margin: 16px;
+  margin-top: 0px;
+}
+window.info .subcontent {
+  margin: 16px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+window.info .subcontent streamlist preferencesgroup {
+  margin-bottom: 8px;
+}
+
+window.preferences .subcontent {
+  margin: 16px;
+}
+window.preferences .configsubpage .subcontent popover {
+  min-width: 264px;
+}
+window.preferences .configsubpage .subcontent button.pill {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+nyx-gtk-seek-bar scale trough highlight {
+  color: @accent_fg_color;
+  background-color: @accent_bg_color;
+}
+nyx-gtk-video .overamp trough highlight {
+  color: @error_fg_color;
+  background-color: @error_bg_color;
+}
+
+nyx-app-headerbar .mainbox {
+  margin: 6px;
+  padding: 2px;
+}
+nyx-app-headerbar .titlelabel label {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+nyx-app-headerbar nyx-app-window-state-buttons {
+  margin-top: 8px;
+}
+nyx-app-headerbar nyx-app-window-state-buttons.filled.right:dir(ltr) {
+  padding-right: 6px;
+}
+nyx-app-headerbar nyx-app-window-state-buttons.filled.right:dir(rtl) {
+  padding-left: 6px;
+}
+nyx-app-headerbar nyx-app-window-state-buttons.filled.left:dir(ltr) {
+  padding-left: 6px;
+}
+nyx-app-headerbar nyx-app-window-state-buttons.filled.left:dir(rtl) {
+  padding-right: 6px;
+}
+
+nyx-app-queue-list .topseparator {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+nyx-app-queue-list .buttonsbox {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+nyx-app-queue-list .buttonsbox dropdown .toggle row {
+  background-color: transparent;
+}
+nyx-app-queue-list .buttonsbox .additemsbutton box {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+nyx-app-queue-list .buttonsbox .additemsbutton box image {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+nyx-app-queue-list .buttonsbox .progressiondropdown popover label {
+  min-width: 100px;
+}
+nyx-app-queue-list .removeitembox {
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 9999px;
+  background-color: alpha(@destructive_bg_color, 0.9);
+}
+nyx-app-queue-list .queue {
+  padding: 3px;
+}
+nyx-app-queue-list .queue listview {
+  padding: 2px;
+  padding-bottom: 0px;
+  border-radius: 0px 0px 19px 19px;
+}
+nyx-app-queue-list .queue listview row {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 30px;
+  border-radius: 9999px;
+}
+/* Disable background light on hover when doing D&D */
+nyx-app-queue-list .queue listview.dnd row.activatable:not(:selected):hover {
+  background: none;
+}
+
+/* Premium styled playlist index numbers */
+nyx-app-queue-list .queue listview row .numeric {
+  font-weight: bold;
+  font-family: monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo;
+  opacity: 0.85;
+  color: @accent_color;
+}
+
+/* Premium translucent extension badges */
+nyx-app-queue-list .queue listview row .extension {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @accent_color;
+  background-color: alpha(@accent_color, 0.15);
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+/* Sleek, Minimalist, Mature Home Screen Redesign */
+window .initialstate {
+  background-color: #0c0d0e;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.home-container {
+  padding: 40px;
+}
+
+.home-logo {
+  opacity: 0.65;
+  transition: opacity 0.25s ease;
+}
+
+.home-logo:hover {
+  opacity: 0.95;
+}
+
+.home-title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.home-instructions {
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: alpha(#ffffff, 0.45);
+  margin-top: 4px;
+}
+
+.minimal-dock {
+  background-color: alpha(#ffffff, 0.03);
+  border: 1px solid alpha(#ffffff, 0.05);
+  border-radius: 9999px;
+  padding: 6px 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dock-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: alpha(#ffffff, 0.6);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.dock-button:hover {
+  background-color: alpha(#ffffff, 0.06);
+  color: #ffffff;
+}
+
+.dock-separator {
+  background-color: alpha(#ffffff, 0.08);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="nyx-app">
+  <object class="GtkBox" id="initial_state">
+    <property name="orientation">vertical</property>
+    <property name="spacing">16</property>
+    <style>
+       <class name="initialstate"/>
+    </style>
+    <child>
+      <object class="GtkCenterBox">
+        <property name="orientation">horizontal</property>
+        <property name="halign">fill</property>
+        <property name="valign">start</property>
+        <child type="start">
+          <object class="NyxAppWindowStateButtons">
+            <property name="halign">end</property>
+            <property name="valign">center</property>
+            <property name="position">left</property>
+          </object>
+        </child>
+        <child type="end">
+          <object class="NyxAppWindowStateButtons">
+            <property name="halign">end</property>
+            <property name="valign">center</property>
+            <property name="menu-button">
+              <object class="GtkMenuButton">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">app_menu</property>
+                <style>
+                  <class name="osd"/>
+                  <class name="flat"/>
+                  <class name="circular"/>
+                </style>
+              </object>
+            </property>
+          </object>
+        </child>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="vexpand">true</property>
+        <property name="hexpand">true</property>
+        <property name="valign">center</property>
+        <property name="halign">center</property>
+        <property name="spacing">48</property>
+        <style>
+          <class name="home-container"/>
+        </style>
+        
+        <!-- Elegant Minimalist Header -->
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">16</property>
+            <property name="halign">center</property>
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">io.github.moon.Nyx</property>
+                <property name="pixel-size">64</property>
+                <style>
+                  <class name="home-logo"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">NYX</property>
+                <style>
+                  <class name="home-title"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Drag and drop media files or folders here to begin</property>
+                <style>
+                  <class name="dim-label"/>
+                  <class name="home-instructions"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- Minimalist Sleek Horizontal Action Row -->
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">12</property>
+            <property name="halign">center</property>
+            <style>
+              <class name="minimal-dock"/>
+            </style>
+            
+            <child>
+              <object class="GtkButton">
+                <property name="label">Add Files</property>
+                <property name="action-name">app.add-files</property>
+                <style>
+                  <class name="dock-button"/>
+                </style>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkSeparator">
+                <property name="orientation">vertical</property>
+                <style>
+                  <class name="dock-separator"/>
+                </style>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton">
+                <property name="label">Open Folder</property>
+                <property name="action-name">app.add-folder</property>
+                <style>
+                  <class name="dock-button"/>
+                </style>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkSeparator">
+                <property name="orientation">vertical</property>
+                <style>
+                  <class name="dock-separator"/>
+                </style>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton">
+                <property name="label">Stream URL</property>
+                <property name="action-name">app.add-uri</property>
+                <style>
+                  <class name="dock-button"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+
+  </object>
+  <menu id="app_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">New Window</attribute>
+        <attribute name="action">app.new-window</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Keyboard Shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <!-- TRANSLATORS: Please do not translate application name -->
+        <attribute name="label" translatable="yes">About Nyx</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

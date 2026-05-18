@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="nyx-app">
+  <template class="GtkListItem">
+    <property name="child">
+      <object class="NyxAppMediaItemBox">
+        <property name="orientation">horizontal</property>
+        <property name="hexpand">true</property>
+        <property name="can-target">true</property>
+        <property name="spacing">6</property>
+        <binding name="media-item">
+          <lookup name="item">GtkListItem</lookup>
+        </binding>
+        <binding name="position">
+          <lookup name="position">GtkListItem</lookup>
+        </binding>
+      </object>
+    </property>
+  </template>
+</interface>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/github/rafostar/Nyx/nyx-gtk">
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-billboard.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-extra-menu-button.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-seek-bar.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-simple-controls.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-status.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-stream-list-item.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-title-header.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-video.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-gtk-video-placeholder.ui</file>
+    <file preprocess="xml-stripblanks">icons/scalable/status/nyx-gtk-speed-normal-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/scalable/status/nyx-gtk-speed-slow-symbolic.svg</file>
+    <file preprocess="xml-stripblanks">icons/scalable/status/nyx-gtk-speed-fast-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/status/nyx-gtk-speed-slow-symbolic-rtl.svg">icons/scalable/status/nyx-gtk-speed-fast-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="icons/scalable/status/nyx-gtk-speed-fast-symbolic-rtl.svg">icons/scalable/status/nyx-gtk-speed-slow-symbolic.svg</file>
+    <file compressed="true">css/styles.css</file>
+  </gresource>
+</gresources>

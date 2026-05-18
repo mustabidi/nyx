@@ -1,0 +1,44 @@
+/*
+ * Copyright (C) 2024 Rafał Dzięgiel <rafostar.github@gmail.com>
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, see
+ * <https://www.gnu.org/licenses/>.
+ */
+
+#pragma once
+
+#if !defined(__NYX_INSIDE__) && !defined(NYX_COMPILATION)
+#error "Only <nyx/nyx.h> can be included directly."
+#endif
+
+/**
+ * NYX_HAVE_DISCOVERER:
+ *
+ * Check if Nyx was compiled with Discoverer feature.
+ */
+#define NYX_HAVE_DISCOVERER (@NYX_HAVE_DISCOVERER@)
+
+/**
+ * NYX_HAVE_MPRIS:
+ *
+ * Check if Nyx was compiled with MPRIS feature.
+ */
+#define NYX_HAVE_MPRIS (@NYX_HAVE_MPRIS@)
+
+/**
+ * NYX_HAVE_SERVER:
+ *
+ * Check if Nyx was compiled with Server feature.
+ */
+#define NYX_HAVE_SERVER (@NYX_HAVE_SERVER@)

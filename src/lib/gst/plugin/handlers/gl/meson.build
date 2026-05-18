@@ -1,4 +1,4 @@
-gst_clapper_gl_ch_dep = dependency('', required: false)
+gst_nyx_gl_ch_dep = dependency('', required: false)
 
 build_gl_ch = (
   not get_option('glimporter').disabled()
@@ -66,7 +66,7 @@ if gst_gl_have_platform_egl
 )
 endif
 
-gst_plugin_gl_ch_deps = [gst_clapper_sink_dep, gst_gl_dep, gst_gl_proto_dep]
+gst_plugin_gl_ch_deps = [gst_nyx_sink_dep, gst_gl_dep, gst_gl_proto_dep]
 have_gtk_gl_windowing = false
 
 if gst_gl_have_window_x11 and (gst_gl_have_platform_egl or gst_gl_have_platform_glx)
@@ -125,10 +125,10 @@ foreach dep : gst_plugin_gl_ch_deps
 endforeach
 
 if build_gl_ch
-  gst_clapper_gl_ch_dep = declare_dependency(
-    link_with: library('gstclapperglcontexthandler',
-      'gstclapperglcontexthandler.c',
-      c_args: gst_clapper_plugin_args,
+  gst_nyx_gl_ch_dep = declare_dependency(
+    link_with: library('gstnyxglcontexthandler',
+      'gstnyxglcontexthandler.c',
+      c_args: gst_nyx_plugin_args,
       include_directories: gst_plugin_conf_inc,
       dependencies: gst_plugin_gl_ch_deps,
       version: meson.project_version(),

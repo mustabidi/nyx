@@ -1,1 +1,1 @@
-subdir('clapper-app')
+subdir('nyx-app')

@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nyx\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-07 19:03+0100\n"
+"PO-Revision-Date: 2025-01-11 17:41\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nyx\n"
+"X-Crowdin-Project-ID: 473374\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /master/src/lib/nyx-gtk/po/nyx-gtk.pot\n"
+"X-Crowdin-File-ID: 46\n"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:9
+#: src/lib/nyx-gtk/nyx-gtk-extra-menu-button.c:228
+msgid "Video"
+msgstr "Vídeo"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:17
+#: src/lib/nyx-gtk/nyx-gtk-extra-menu-button.c:229
+msgid "Audio"
+msgstr "Audio"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:25
+#: src/lib/nyx-gtk/nyx-gtk-extra-menu-button.c:230
+msgid "Subtitles"
+msgstr "Subtítulos"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:28
+msgid "Show Subtitles"
+msgstr "Mostrar subtítulos"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:32
+msgid "Open…"
+msgstr "Abrir…"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:75
+msgid "Mute"
+msgstr "Silenciar"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui:119
+msgid "Reset"
+msgstr "Restablecer"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-video-placeholder.ui:25
+msgid "External video output"
+msgstr "Salida de vídeo externa"
+
+#: src/lib/nyx-gtk/ui/nyx-gtk-video-placeholder.ui:37
+msgid "Used video sink cannot be embedded within application window"
+msgstr "La salida de vídeo utilizada no se puede mostrar en la ventana de la aplicación"
+
+#: src/lib/nyx-gtk/nyx-gtk-status.c:79
+msgid "Unplayable Content"
+msgstr "Contenido no reproducible"
+
+#. TRANSLATORS: Please do not try to translate "GStreamer" (it is a library name).
+#: src/lib/nyx-gtk/nyx-gtk-status.c:89
+#, c-format
+msgid "Your GStreamer installation is missing a plugin: %s"
+msgstr "A tu instalación de GStreamer le falta un complemento: %s"
+
+#: src/lib/nyx-gtk/nyx-gtk-status.c:90
+msgid "Missing Plugin"
+msgstr "Complemento no disponible"
+
+#: src/lib/nyx-gtk/nyx-gtk-stream-check-button.c:82
+#: src/lib/nyx-gtk/nyx-gtk-stream-check-button.c:126
+msgid "Undetermined"
+msgstr "Indeterminado"
+
+#: src/lib/nyx-gtk/nyx-gtk-stream-check-button.c:82
+msgid "Channels"
+msgstr "Canales"
+
+#: src/lib/nyx-gtk/nyx-gtk-title-label.c:91
+msgid "No media"
+msgstr "No hay medios"
+
+#: src/lib/nyx-gtk/nyx-gtk-title-label.c:103
+msgid "Unknown title"
+msgstr "Título desconocido"
+

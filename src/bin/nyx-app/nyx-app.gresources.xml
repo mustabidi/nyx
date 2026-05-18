@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/moon/Nyx/nyx-app">
+    <file preprocess="xml-stripblanks">data/metainfo/io.github.moon.Nyx.metainfo.xml</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-initial-state.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-uri-dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-headerbar.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-help-overlay.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-info-window.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-queue-list.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-queue-list-item.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-queue-progression-item.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-video-stream-list-item.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-audio-stream-list-item.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-subtitle-stream-list-item.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-preferences-window.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-window.ui</file>
+    <file preprocess="xml-stripblanks">ui/nyx-app-window-state-buttons.ui</file>
+    <file compressed="true">css/styles.css</file>
+  </gresource>
+</gresources>

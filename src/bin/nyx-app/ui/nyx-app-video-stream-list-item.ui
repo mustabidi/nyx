@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="nyx-app">
+  <template class="GtkListItem">
+    <property name="activatable">false</property>
+    <property name="child">
+      <object class="AdwPreferencesGroup">
+        <binding name="title">
+          <closure type="gchararray" function="nyx_app_list_item_make_stream_group_title">
+            <lookup name="item">GtkListItem</lookup>
+          </closure>
+        </binding>
+        <child>
+          <object class="NyxAppPropertyRow">
+            <property name="title" translatable="yes">Codec</property>
+            <binding name="subtitle">
+              <lookup name="codec" type="NyxVideoStream">
+                <lookup name="item">GtkListItem</lookup>
+              </lookup>
+            </binding>
+          </object>
+        </child>
+        <child>
+          <object class="NyxAppPropertyRow">
+            <property name="title" translatable="yes">Resolution</property>
+            <binding name="subtitle">
+              <closure type="gchararray" function="nyx_app_list_item_make_resolution">
+                <lookup name="width" type="NyxVideoStream">
+                  <lookup name="item">GtkListItem</lookup>
+                </lookup>
+                <lookup name="height" type="NyxVideoStream">
+                  <lookup name="item">GtkListItem</lookup>
+                </lookup>
+              </closure>
+            </binding>
+          </object>
+        </child>
+        <child>
+          <object class="NyxAppPropertyRow">
+            <property name="title" translatable="yes">Framerate</property>
+            <binding name="subtitle">
+              <closure type="gchararray" function="nyx_app_list_item_convert_double">
+                <lookup name="fps" type="NyxVideoStream">
+                  <lookup name="item">GtkListItem</lookup>
+                </lookup>
+              </closure>
+            </binding>
+          </object>
+        </child>
+        <child>
+          <object class="NyxAppPropertyRow">
+            <property name="title" translatable="yes">Bitrate</property>
+            <binding name="subtitle">
+              <closure type="gchararray" function="nyx_app_list_item_make_bitrate">
+                <lookup name="bitrate" type="NyxVideoStream">
+                  <lookup name="item">GtkListItem</lookup>
+                </lookup>
+              </closure>
+            </binding>
+          </object>
+        </child>
+        <child>
+          <object class="NyxAppPropertyRow">
+            <property name="title" translatable="yes">Pixel Format</property>
+            <binding name="subtitle">
+              <lookup name="pixel-format" type="NyxVideoStream">
+                <lookup name="item">GtkListItem</lookup>
+              </lookup>
+            </binding>
+          </object>
+        </child>
+      </object>
+    </property>
+  </template>
+</interface>

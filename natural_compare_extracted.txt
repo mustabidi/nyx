@@ -1,0 +1,12 @@
+--- MATCH 93 ---
+"static gint\n_natural_compare (const gchar *s1, const gchar *s2)\n{\n  if (!s1 && !s2) return 0;\n  if (!s1) return -1;\n  if (!s2) return 1;\n\n  while (*s1 && *s2) {\n    if (g_ascii_isdigit (*s1) && g_ascii_isdigit (*s2)) {\n      /* Skip leading zeros
+<truncated 2117 bytes>
+
+--- MATCH 96 ---
+"static gint\n_natural_compare (const gchar *s1, const gchar *s2)\n{\n  if (!s1 && !s2) return 0;\n  if (!s1) return -1;\n  if (!s2) return 1;\n\n  while (*s1 && *s2) {\n    if (g_ascii_isdigit (*s1) && g_ascii_isdigit (*s2)) {\n      /* Skip leading zeros
+<truncated 1763 bytes>
+
+--- MATCH 100 ---
+"- `[x]` Implement `_natural_compare` in `nyx-app-utils.c` for true natural numeric string sorting.\n- `[x]` Update `_compare_files_list` to utilize `_natural_compare`.\n- `[x]` Perform code audit of `nyx-app-utils.c` for memory leaks, GObject owne
+<truncated 242 bytes>
+

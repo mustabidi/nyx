@@ -42,7 +42,7 @@ jobs:
           mingw-w64-${{ matrix.arch }}-libadwaita
     - name: Prepare
       run: |
-        BUILD_PREFIX="$GITHUB_WORKSPACE/clapper-win-${{ matrix.arch }}"
+        BUILD_PREFIX="$GITHUB_WORKSPACE/nyx-win-${{ matrix.arch }}"
 
         mkdir -p $BUILD_PREFIX/bin
         cp /mingw64/bin/gdbus.exe $BUILD_PREFIX/bin/
@@ -70,32 +70,32 @@ jobs:
             libgstxingmux.dll libgsty4menc.dll libgstzbar.dll
     - name: Build
       run: |
-        meson setup builddir --prefix=$GITHUB_WORKSPACE/clapper-win-${{ matrix.arch }}
+        meson setup builddir --prefix=$GITHUB_WORKSPACE/nyx-win-${{ matrix.arch }}
         cd builddir
         meson compile
         meson install
     - name: Package
       run: |
-        BUILD_PREFIX="$GITHUB_WORKSPACE/clapper-win-${{ matrix.arch }}"
+        BUILD_PREFIX="$GITHUB_WORKSPACE/nyx-win-${{ matrix.arch }}"
 
-        ldd $BUILD_PREFIX/bin/clapper.exe | grep '\/mingw.*\.dll' -o | xargs -I{} cp -n "{}" $BUILD_PREFIX/bin
-        find $BUILD_PREFIX/lib/clapper-0.0/ -name '*\.dll' -type f -exec ldd "{}" \; | grep '\/mingw.*\.dll' -o | xargs -I{} cp -n "{}" $BUILD_PREFIX/bin
+        ldd $BUILD_PREFIX/bin/nyx.exe | grep '\/mingw.*\.dll' -o | xargs -I{} cp -n "{}" $BUILD_PREFIX/bin
+        find $BUILD_PREFIX/lib/nyx-0.0/ -name '*\.dll' -type f -exec ldd "{}" \; | grep '\/mingw.*\.dll' -o | xargs -I{} cp -n "{}" $BUILD_PREFIX/bin
         find $BUILD_PREFIX/lib/gstreamer-1.0/ -name '*\.dll' -type f -exec ldd "{}" \; | grep '\/mingw.*\.dll' -o | xargs -I{} cp -n "{}" $BUILD_PREFIX/bin
         find $BUILD_PREFIX/lib/gio/ -name '*\.dll' -type f -exec ldd "{}" \; | grep '\/mingw.*\.dll' -o | xargs -I{} cp -n "{}" $BUILD_PREFIX/bin
     - name: Cleanup
       run: |
-        BUILD_PREFIX="$GITHUB_WORKSPACE/clapper-win-${{ matrix.arch }}"
+        BUILD_PREFIX="$GITHUB_WORKSPACE/nyx-win-${{ matrix.arch }}"
 
         rm -rf $BUILD_PREFIX/include
         rm -rf $BUILD_PREFIX/lib/pkgconfig
     - name: Installer
       uses: Minionguyjpro/Inno-Setup-Action@v1.2.5
       with:
-        path: builddir/pkgs/windows-installer/clapper.iss
+        path: builddir/pkgs/windows-installer/nyx.iss
         options: /O+
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
-        name: clapper-win-${{ matrix.arch }}
-        path: builddir/pkgs/windows-installer/InstallerOutput/Clapper*.exe
+        name: nyx-win-${{ matrix.arch }}
+        path: builddir/pkgs/windows-installer/InstallerOutput/Nyx*.exe
         if-no-files-found: error

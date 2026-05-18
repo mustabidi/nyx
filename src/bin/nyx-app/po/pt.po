@@ -1,0 +1,632 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nyx\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-12 21:55+0100\n"
+"PO-Revision-Date: 2026-01-12 13:37\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nyx\n"
+"X-Crowdin-Project-ID: 473374\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: /master/src/bin/nyx-app/po/nyx-app.pot\n"
+"X-Crowdin-File-ID: 48\n"
+
+#. Translators: Do NOT translate app name!
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:3
+msgid "Nyx"
+msgstr "Nyx"
+
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:4
+msgid "Multimedia Player"
+msgstr "Reprodutor multimédia"
+
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:5
+msgid "Play videos and music"
+msgstr "Reproduzir vídeos e música"
+
+#. Translators: Search terms to find this application. Do NOT translate the semicolons!
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:15
+msgid "Video;Movie;Film;Clip;Series;Player;Playlist;DVD;TV;Disc;"
+msgstr "Vídeo;Filme;Filme;Clipe;Série;Leitor;Reprodutor;Lista de reprodução;DVD;TV;Disco;"
+
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:21
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:183
+msgid "New Window"
+msgstr "Nova Janela"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:14
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:14
+msgid "Codec"
+msgstr "Codificador"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:24
+msgid "Channels"
+msgstr "Canais"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:36
+msgid "Sample Format"
+msgstr "Formato de amostra"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:46
+msgid "Sample Rate"
+msgstr "Taxa de amostragem"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:58
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:51
+msgid "Bitrate"
+msgstr "Taxa de Bits (Bitrate)"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:70
+#: src/bin/nyx-app/ui/nyx-app-subtitle-stream-list-item.ui:24
+msgid "Language"
+msgstr "Idioma"
+
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:189
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:80
+msgid "Preferences"
+msgstr "Preferências"
+
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:193
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:84
+msgid "Keyboard Shortcuts"
+msgstr "Teclas de atalho"
+
+#. TRANSLATORS: Please do not translate application name
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:200
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:91
+msgid "About Nyx"
+msgstr "Acerca do Nyx"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:10
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:11
+msgid "General"
+msgstr "Geral"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:13
+msgid "New window"
+msgstr "Nova janela"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:19
+msgid "Open preferences"
+msgstr "Abrir preferências"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:25
+msgid "Show shortcuts"
+msgstr "Mostrar atalhos"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:31
+msgid "Show pipeline"
+msgstr "Mostrar pipeline"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:37
+msgid "Toggle fullscreen"
+msgstr "Ativar ecrã inteiro"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:38
+msgid "Double tap | Double click"
+msgstr "Toque duplo | Clique duplo"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:44
+msgid "Unfullscreen"
+msgstr "Sair de ecrã inteiro"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:50
+msgid "Auto window resize"
+msgstr "Redimensionamento automático da janela"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:51
+msgid "Middle click"
+msgstr "Clique com o botão do meio"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:57
+msgid "Quit"
+msgstr "Sair"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:65
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:32
+msgid "Media"
+msgstr "Ficheiro"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:68
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:55
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:178
+msgid "Add Files…"
+msgstr "Adicionar ficheiros…"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:74
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:65
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:182
+msgid "Add URI…"
+msgstr "Add URI…"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:82
+msgid "Queue"
+msgstr "Fila de espera"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:86
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:93
+msgid "Next item"
+msgstr "Item seguinte"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:100
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:107
+msgid "Previous item"
+msgstr "Item anterior"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:113
+msgid "Change progression mode"
+msgstr "Alterar modo de progressão"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:121
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:77
+msgid "Playback"
+msgstr "Reproduzir"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:124
+msgid "Toggle play"
+msgstr "Alternar reprodução"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:125
+msgid "Tap | Left click"
+msgstr "Tocar | Clique esquerdo"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:132
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:140
+msgid "Seek forward"
+msgstr "Procurar para a frente"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:133
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:157
+msgid "Double tap (right side) | Scroll right"
+msgstr "Toque duplo (lado direito) Deslize direito"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:141
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:149
+msgid "Double tap (left side) | Scroll left"
+msgstr "Toque duplo (lado esquerdo) Deslize esquerdo"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:148
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:156
+msgid "Seek backward"
+msgstr "Procurar para trás"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:163
+msgid "Volume up"
+msgstr "Aumentar o volume"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:164
+msgid "Scroll up"
+msgstr "Deslizar para cima"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:170
+msgid "Volume down"
+msgstr "Diminuir o volume"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:171
+msgid "Scroll down"
+msgstr "Deslizar para baixo"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:177
+msgid "Toggle mute"
+msgstr "Ativar/Desativar Som"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:183
+msgid "Speed up"
+msgstr "Acelerar"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:189
+msgid "Speed down"
+msgstr "Abrandar"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:195
+msgid "Advance frame"
+msgstr "Fotograma avançado"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:206
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:213
+msgid "Next chapter"
+msgstr "Capítulo seguinte"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:220
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:227
+msgid "Previous chapter"
+msgstr "Capítulo anterior"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:13
+msgid "Info"
+msgstr "Informação"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:35
+#: src/bin/nyx-app/ui/nyx-app-subtitle-stream-list-item.ui:14
+msgid "Title"
+msgstr "Título"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:49
+msgid "Container Format"
+msgstr "Formato do contentor"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:63
+msgid "Duration"
+msgstr "Duração"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:81
+msgid "Streams"
+msgstr "Transmissões"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:84
+#: src/bin/nyx-app/nyx-app-list-item-utils.c:36
+msgid "Video"
+msgstr "Vídeo"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:107
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:81
+#: src/bin/nyx-app/nyx-app-list-item-utils.c:39
+msgid "Audio"
+msgstr "Áudio"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:130
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:101
+#: src/bin/nyx-app/nyx-app-list-item-utils.c:42
+msgid "Subtitles"
+msgstr "Legendas"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:155
+msgid "Video Playback"
+msgstr "Reprodução de vídeo"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:158
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:199
+msgid "Decoder"
+msgstr "Descodificador"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:170
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:211
+msgid "Filter"
+msgstr "Filtro"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:182
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:223
+msgid "Sink"
+msgstr "Saída"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:196
+msgid "Audio Playback"
+msgstr "Reprodução de áudio"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:238
+msgid "Show Pipeline"
+msgstr "Mostrar Pipeline"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:258
+msgid "Video Streams"
+msgstr "Transmissões de vídeo"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:301
+msgid "Audio Streams"
+msgstr "Transmissões de áudio"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:344
+msgid "Subtitle Streams"
+msgstr "Transmissões de legenda"
+
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:46
+msgid "Start by adding media to playback queue"
+msgstr "Comece por adicionar multimédia à fila de reprodução"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:15
+msgid "Seeking"
+msgstr "A procurar"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:18
+msgid "Method"
+msgstr "Método"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:19
+msgid "A preferred method used for seeking"
+msgstr "Um método preferido usado para procurar"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:32
+msgid "Value"
+msgstr "Valor"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:33
+msgid "Value used for seeking forward/backward"
+msgstr "Valor usado para procurar avançar/retroceder"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:46
+msgid "Unit"
+msgstr "Unidade"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:47
+msgid "An unit of a seek forward/backward value"
+msgstr "Uma unidade de um valor de procura para avançar/retroceder"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:51
+msgid "Second"
+msgstr "Segundo"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:52
+msgid "Minute"
+msgstr "Minuto"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:53
+msgid "Percentage"
+msgstr "Percentagem"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:63
+msgid "Features"
+msgstr "Funcionalidades"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:67
+msgid "Server"
+msgstr "Servidor"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:68
+msgid "Control player remotely"
+msgstr "Controlar reprodutor remotamente"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:84
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:104
+msgid "Offset"
+msgstr "Desvio"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:85
+msgid "Synchronisation offset in seconds between the audio and video streams"
+msgstr "Desvio de sincronização em segundos entre as transmissões de áudio e vídeo"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:105
+msgid "Synchronisation offset in seconds between the subtitle and video streams"
+msgstr "Desvio de sincronização em segundos entre as transmissões de legenda e vídeo"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:119
+msgid "Default font"
+msgstr "Tipo de letra predefinida"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:120
+msgid "Text font used for subtitles when media does not explicitly specify one"
+msgstr "Tipo de letra usada para legendas quando o conteúdo não especifica explicitamente uma"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:138
+msgid "Tweaks"
+msgstr "Ajustes"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:145
+msgid "Enhancers"
+msgstr "Melhoramentos"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:146
+msgid "Browse and configure properties of available enhancers"
+msgstr "Navegue e configure as propriedades dos melhoramentos disponíveis"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:163
+msgid "Plugin ranking"
+msgstr "Classificação do plugin"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:164
+msgid "Alter default ranks of GStreamer plugins"
+msgstr "Altera as classificações predefinidas dos plugins GStreamer"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:183
+msgid "Nyx Enhancers"
+msgstr "Melhoramentos Nyx"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:203
+msgid "Available enhancers"
+msgstr "Melhoramentos disponíveis"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:204
+msgid "Select an enhancer plugin to view its information and properties to configure."
+msgstr "Selecione um plugin de melhoramento para ver suas informações e propriedades a configurar."
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:207
+msgid "Enhancer"
+msgstr "Melhoramento"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:227
+msgid "Information"
+msgstr "Informação"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:230
+msgid "Module"
+msgstr "Módulo"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:243
+msgid "Description"
+msgstr "Descrição"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:256
+msgid "Version"
+msgstr "Versão"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:271
+msgid "Properties"
+msgstr "Propriedades"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:283
+msgid "No Enhancers Found"
+msgstr "Sem melhoramentos"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:284
+msgid "Install some to add more cool functionalities to the player!"
+msgstr "Instale alguns para adicionar mais funcionalidades ao reprodutor!"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:301
+msgid "Plugin Ranking"
+msgstr "Classificação do plugin"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:319
+msgid "Available plugins"
+msgstr "Plugins disponíveis"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:320
+msgid "Select a plugin and its feature to override rank for. When multiple elements have similiar capabilities, the one with highest value is preferred."
+msgstr "Selecionar um plugin e sua funcionalidade para substituir a classificação. Quando vários elementos têm capacidade semelhante, o com valor mais alto é preferido."
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:323
+msgid "Plugin"
+msgstr "Plugin"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:332
+msgid "Plugin feature"
+msgstr "Funcionalidade do plugin"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:350
+msgid "Add override"
+msgstr "Adicionar substituição"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:366
+msgid "Rank overrides"
+msgstr "Substituições de classificação"
+
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:60
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:30
+msgid "Add"
+msgstr "Adicionar"
+
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:87
+msgid "Queue progression"
+msgstr "Progresso da fila de espera"
+
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:188
+msgid "Clear Queue"
+msgstr "Limpar fila de espera"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:4
+msgid "Add URI"
+msgstr "Adicionar URI"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:5
+msgid "Insert an URI to be added to playback queue"
+msgstr "Insira um URI a ser adicionado à fila de reprodução"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:23
+msgid "Enter or drop URI here"
+msgstr "Introduzir ou largar o URI aqui"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:29
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:24
+msgid "Resolution"
+msgstr "Resolução"
+
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:39
+msgid "Framerate"
+msgstr "Taxa de fotogramas"
+
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:63
+msgid "Pixel Format"
+msgstr "Formato de píxel"
+
+#. TRANSLATORS: Put your name(s) here for credits or leave untranslated
+#: src/bin/nyx-app/nyx-app-about-dialog.c:42
+msgid "translator-credits"
+msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>"
+
+#: src/bin/nyx-app/nyx-app-application.c:333
+msgid "Close"
+msgstr "Fechar"
+
+#: src/bin/nyx-app/nyx-app-application.c:753
+msgid "Create a new window"
+msgstr "Cria uma nova janela"
+
+#: src/bin/nyx-app/nyx-app-application.c:754
+msgid "Add media to queue in primary application instance"
+msgstr "Adicionar ficheiros à fila de espera na instância da aplicação principal"
+
+#: src/bin/nyx-app/nyx-app-application.c:755
+msgid "Audio volume to set (0 - 2.0 range)"
+msgstr "Volume de áudio a definir (intervalo 0 - 2.0)"
+
+#: src/bin/nyx-app/nyx-app-application.c:756
+msgid "Playback speed to set (0.05 - 2.0 range)"
+msgstr "Velocidade de reprodução a definir (0.05 - intervalo 2.0)"
+
+#: src/bin/nyx-app/nyx-app-application.c:757
+msgid "Initial bitrate for adaptive streaming"
+msgstr "Taxa de bits inicial para streaming adaptável"
+
+#: src/bin/nyx-app/nyx-app-application.c:758
+msgid "Initial queue progression mode (0=none, 1=consecutive, 2=repeat-item, 3=carousel, 4=shuffle)"
+msgstr "Modo de progressão inicial da fila de espera (0=nenhum, 1=consecutivo, 2=repetição de itens, 3=carrossel, 4=aleatório)"
+
+#: src/bin/nyx-app/nyx-app-application.c:759
+msgid "Set window to be fullscreen"
+msgstr "Definir janela para ecrã inteiro"
+
+#: src/bin/nyx-app/nyx-app-application.c:760
+msgid "Video filter to use (\"none\" to disable)"
+msgstr "Filtro de vídeo a utilizar (\"nenhum\" para desativar)"
+
+#: src/bin/nyx-app/nyx-app-application.c:761
+msgid "Audio filter to use (\"none\" to disable)"
+msgstr "Filtro de áudio a utilizar (\"nenhum\" para desativar)"
+
+#: src/bin/nyx-app/nyx-app-application.c:762
+msgid "Video sink to use"
+msgstr "A saída de vídeo a utilizar"
+
+#: src/bin/nyx-app/nyx-app-application.c:763
+msgid "Audio sink to use"
+msgstr "A saída de áudio a utilizar"
+
+#: src/bin/nyx-app/nyx-app-info-window.c:88
+msgid "Hardware"
+msgstr "Hardware"
+
+#: src/bin/nyx-app/nyx-app-info-window.c:88
+msgid "Software"
+msgstr "Software"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:315
+msgid "Restore default"
+msgstr "Restaurar predefinição"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:418
+msgid "No configurable properties"
+msgstr "Não há propriedades configuráveis"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:814
+msgid "Accurate"
+msgstr "Precisão"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:816
+msgid "Normal"
+msgstr "Predefinido"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:818
+msgid "Fast"
+msgstr "Rápido"
+
+#: src/bin/nyx-app/nyx-app-utils.c:212
+msgid "No progression"
+msgstr "Sem progressão"
+
+#: src/bin/nyx-app/nyx-app-utils.c:213
+msgid "Consecutive"
+msgstr "Consecutiva"
+
+#: src/bin/nyx-app/nyx-app-utils.c:214
+msgid "Repeat item"
+msgstr "Repetir item"
+
+#: src/bin/nyx-app/nyx-app-utils.c:215
+msgid "Carousel"
+msgstr "Carrossel"
+
+#: src/bin/nyx-app/nyx-app-utils.c:216
+msgid "Shuffle"
+msgstr "Aleatório"
+
+#: src/bin/nyx-app/nyx-app-window.c:1049
+msgid "Drop on title bar to play now or anywhere else to enqueue."
+msgstr "Largar na barra de título para reproduzir agora ou em qualquer outro lugar para adicionar à fila de espera."
+

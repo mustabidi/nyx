@@ -36,14 +36,14 @@ jobs:
     - name: Build
       uses: flatpak/flatpak-github-actions/flatpak-builder@master
       with:
-        bundle: com.github.rafostar.Clapper.flatpak
-        manifest-path: pkgs/flatpak/com.github.rafostar.Clapper.json
+        bundle: com.github.rafostar.Nyx.flatpak
+        manifest-path: pkgs/flatpak/com.github.rafostar.Nyx.json
         cache-key: flatpak-builder-${{ github.sha }}
         arch: ${{ matrix.arch }}
         upload-artifact: false
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
-        name: clapper-flatpak-${{ matrix.arch }}
-        path: com.github.rafostar.Clapper.flatpak
+        name: nyx-flatpak-${{ matrix.arch }}
+        path: com.github.rafostar.Nyx.flatpak
         if-no-files-found: error

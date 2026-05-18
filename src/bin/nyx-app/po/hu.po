@@ -1,0 +1,632 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nyx\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-12 21:55+0100\n"
+"PO-Revision-Date: 2025-12-12 22:25\n"
+"Last-Translator: \n"
+"Language-Team: Hungarian\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nyx\n"
+"X-Crowdin-Project-ID: 473374\n"
+"X-Crowdin-Language: hu\n"
+"X-Crowdin-File: /master/src/bin/nyx-app/po/nyx-app.pot\n"
+"X-Crowdin-File-ID: 48\n"
+
+#. Translators: Do NOT translate app name!
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:3
+msgid "Nyx"
+msgstr ""
+
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:4
+msgid "Multimedia Player"
+msgstr ""
+
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:5
+msgid "Play videos and music"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate the semicolons!
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:15
+msgid "Video;Movie;Film;Clip;Series;Player;Playlist;DVD;TV;Disc;"
+msgstr ""
+
+#: src/bin/nyx-app/data/applications/com.github.rafostar.Nyx.desktop.in:21
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:183
+msgid "New Window"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:14
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:14
+msgid "Codec"
+msgstr "Kodek"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:24
+msgid "Channels"
+msgstr "Csatornák"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:36
+msgid "Sample Format"
+msgstr "Minta formátum"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:46
+msgid "Sample Rate"
+msgstr "Mintavételezési ráta"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:58
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:51
+msgid "Bitrate"
+msgstr "Bitráta"
+
+#: src/bin/nyx-app/ui/nyx-app-audio-stream-list-item.ui:70
+#: src/bin/nyx-app/ui/nyx-app-subtitle-stream-list-item.ui:24
+msgid "Language"
+msgstr "Nyelv"
+
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:189
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:80
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:193
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:84
+msgid "Keyboard Shortcuts"
+msgstr "Gyorsbillentyűk"
+
+#. TRANSLATORS: Please do not translate application name
+#: src/bin/nyx-app/ui/nyx-app-headerbar.ui:200
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:91
+msgid "About Nyx"
+msgstr "A Nyx -ről"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:10
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:11
+msgid "General"
+msgstr "Általános beállítások"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:13
+msgid "New window"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:19
+msgid "Open preferences"
+msgstr "Beállítások megnyitása"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:25
+msgid "Show shortcuts"
+msgstr "Gyorsbillentyűk megjelenítése"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:31
+msgid "Show pipeline"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:37
+msgid "Toggle fullscreen"
+msgstr "Teljes képernyő be/ki"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:38
+msgid "Double tap | Double click"
+msgstr "Dupla koppintás | Dupla kattintás"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:44
+msgid "Unfullscreen"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:50
+msgid "Auto window resize"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:51
+msgid "Middle click"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:57
+msgid "Quit"
+msgstr "Kilépés"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:65
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:32
+msgid "Media"
+msgstr "Média"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:68
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:55
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:178
+msgid "Add Files…"
+msgstr "Fájlok hozzáadása…"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:74
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:65
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:182
+msgid "Add URI…"
+msgstr "URI hozzáadása…"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:82
+msgid "Queue"
+msgstr "Lejátszólista"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:86
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:93
+msgid "Next item"
+msgstr "Következő listaelem"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:100
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:107
+msgid "Previous item"
+msgstr "Előző listaelem"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:113
+msgid "Change progression mode"
+msgstr "Haladási mód megváltoztatása"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:121
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:77
+msgid "Playback"
+msgstr "Lejátszás"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:124
+msgid "Toggle play"
+msgstr "Lejátszás indítása/megállítása"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:125
+msgid "Tap | Left click"
+msgstr "Koppintás | Bal kattintás"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:132
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:140
+msgid "Seek forward"
+msgstr "Előretekerés"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:133
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:157
+msgid "Double tap (right side) | Scroll right"
+msgstr "Dupla koppintás (a jobb oldalon) | Görgetés jobbra"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:141
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:149
+msgid "Double tap (left side) | Scroll left"
+msgstr "Dupla koppintás (a bal oldalon) | Görgetés balra"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:148
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:156
+msgid "Seek backward"
+msgstr "Visszatekerés"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:163
+msgid "Volume up"
+msgstr "Hangerő növelése"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:164
+msgid "Scroll up"
+msgstr "Görgetés felfelé"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:170
+msgid "Volume down"
+msgstr "Hangerő csökkentése"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:171
+msgid "Scroll down"
+msgstr "Görgetés lefelé"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:177
+msgid "Toggle mute"
+msgstr "Némítás be-/kikapcsolása"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:183
+msgid "Speed up"
+msgstr "Gyorsítás"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:189
+msgid "Speed down"
+msgstr "Lassítás"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:195
+msgid "Advance frame"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:206
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:213
+msgid "Next chapter"
+msgstr "Következő jelenet"
+
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:220
+#: src/bin/nyx-app/ui/nyx-app-help-overlay.ui:227
+msgid "Previous chapter"
+msgstr "Előző jelenet"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:13
+msgid "Info"
+msgstr "Információ"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:35
+#: src/bin/nyx-app/ui/nyx-app-subtitle-stream-list-item.ui:14
+msgid "Title"
+msgstr "Cím"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:49
+msgid "Container Format"
+msgstr "Tároló formátum"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:63
+msgid "Duration"
+msgstr "Időtartam"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:81
+msgid "Streams"
+msgstr "Adatfolyamok"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:84
+#: src/bin/nyx-app/nyx-app-list-item-utils.c:36
+msgid "Video"
+msgstr "Kép"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:107
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:81
+#: src/bin/nyx-app/nyx-app-list-item-utils.c:39
+msgid "Audio"
+msgstr "Hang"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:130
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:101
+#: src/bin/nyx-app/nyx-app-list-item-utils.c:42
+msgid "Subtitles"
+msgstr "Feliratok"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:155
+msgid "Video Playback"
+msgstr "Videólejátszás"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:158
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:199
+msgid "Decoder"
+msgstr "Dekóder"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:170
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:211
+msgid "Filter"
+msgstr "Szűrő"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:182
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:223
+msgid "Sink"
+msgstr "Nyelő"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:196
+msgid "Audio Playback"
+msgstr "Hanglejátszás"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:238
+msgid "Show Pipeline"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:258
+msgid "Video Streams"
+msgstr "Videó adatfolyam"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:301
+msgid "Audio Streams"
+msgstr "Hang adatfolyam"
+
+#: src/bin/nyx-app/ui/nyx-app-info-window.ui:344
+msgid "Subtitle Streams"
+msgstr "Felirat adatfolyam"
+
+#: src/bin/nyx-app/ui/nyx-app-initial-state.ui:46
+msgid "Start by adding media to playback queue"
+msgstr "Induljon a média lejátszólistára vételével"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:15
+msgid "Seeking"
+msgstr "Tekerés"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:18
+msgid "Method"
+msgstr "Mód"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:19
+msgid "A preferred method used for seeking"
+msgstr "A tekerés előnyben részesített módja"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:32
+msgid "Value"
+msgstr "Érték"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:33
+msgid "Value used for seeking forward/backward"
+msgstr "Az előre/hátra tekeréshez használt érték"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:46
+msgid "Unit"
+msgstr "Mértékegység"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:47
+msgid "An unit of a seek forward/backward value"
+msgstr "Az előre/hátra tekeréshez használt mértékegység"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:51
+msgid "Second"
+msgstr "Másodperc"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:52
+msgid "Minute"
+msgstr "Perc"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:53
+msgid "Percentage"
+msgstr "Százalék"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:63
+msgid "Features"
+msgstr "Funkciók"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:67
+msgid "Server"
+msgstr "Szerver"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:68
+msgid "Control player remotely"
+msgstr "Lejátszó távirányítása"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:84
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:104
+msgid "Offset"
+msgstr "Eltolás"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:85
+msgid "Synchronisation offset in seconds between the audio and video streams"
+msgstr "A hang és kép adatfolyamok közötti szinkronizáció eltolása másodpercekben"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:105
+msgid "Synchronisation offset in seconds between the subtitle and video streams"
+msgstr "A hang és kép adatfolyamok közötti szinkronizáció eltolása"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:119
+msgid "Default font"
+msgstr "Alapértelmezett betűtípus"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:120
+msgid "Text font used for subtitles when media does not explicitly specify one"
+msgstr "A feliratokoz használ betűtípus, ha a média nem határozza azt meg"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:138
+msgid "Tweaks"
+msgstr "Finomhangolások"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:145
+msgid "Enhancers"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:146
+msgid "Browse and configure properties of available enhancers"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:163
+msgid "Plugin ranking"
+msgstr "Bővítményrangsor"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:164
+msgid "Alter default ranks of GStreamer plugins"
+msgstr "Az alapértelmezett GStreamer bővítményrangsor megváltoztatása"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:183
+msgid "Nyx Enhancers"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:203
+msgid "Available enhancers"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:204
+msgid "Select an enhancer plugin to view its information and properties to configure."
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:207
+msgid "Enhancer"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:227
+msgid "Information"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:230
+msgid "Module"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:243
+msgid "Description"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:256
+msgid "Version"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:271
+msgid "Properties"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:283
+msgid "No Enhancers Found"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:284
+msgid "Install some to add more cool functionalities to the player!"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:301
+msgid "Plugin Ranking"
+msgstr "Bővítményrangsor"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:319
+msgid "Available plugins"
+msgstr "Elérhető bővítmények"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:320
+msgid "Select a plugin and its feature to override rank for. When multiple elements have similiar capabilities, the one with highest value is preferred."
+msgstr "Válasszon ki egy bővítményt és annak funkcióját, a rangsor felülbírálásához. Ha több elemnek is hasonló képességei vannak, akkor a magasabb értékű részesül előnyben."
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:323
+msgid "Plugin"
+msgstr "Bővítmény"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:332
+msgid "Plugin feature"
+msgstr "Bővítmény funkció"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:350
+msgid "Add override"
+msgstr "Felülbírálás hozzáadása"
+
+#: src/bin/nyx-app/ui/nyx-app-preferences-window.ui:366
+msgid "Rank overrides"
+msgstr "Rangsor felülbírálások"
+
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:60
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:30
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:87
+msgid "Queue progression"
+msgstr "Lejátszólista haladása"
+
+#: src/bin/nyx-app/ui/nyx-app-queue-list.ui:188
+msgid "Clear Queue"
+msgstr ""
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:4
+msgid "Add URI"
+msgstr "URI hozzáadása"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:5
+msgid "Insert an URI to be added to playback queue"
+msgstr "Illesszen be egy URI-t a lejátszólistára vételéhez"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:23
+msgid "Enter or drop URI here"
+msgstr "Adjon meg egy URI -t itt, vagy húzza és ejtse ide"
+
+#: src/bin/nyx-app/ui/nyx-app-uri-dialog.ui:29
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:24
+msgid "Resolution"
+msgstr "Felbontás"
+
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:39
+msgid "Framerate"
+msgstr "Képkockasebesség"
+
+#: src/bin/nyx-app/ui/nyx-app-video-stream-list-item.ui:63
+msgid "Pixel Format"
+msgstr "Képpont formátum"
+
+#. TRANSLATORS: Put your name(s) here for credits or leave untranslated
+#: src/bin/nyx-app/nyx-app-about-dialog.c:42
+msgid "translator-credits"
+msgstr "Ferenc Géczi"
+
+#: src/bin/nyx-app/nyx-app-application.c:333
+msgid "Close"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:753
+msgid "Create a new window"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:754
+msgid "Add media to queue in primary application instance"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:755
+msgid "Audio volume to set (0 - 2.0 range)"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:756
+msgid "Playback speed to set (0.05 - 2.0 range)"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:757
+msgid "Initial bitrate for adaptive streaming"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:758
+msgid "Initial queue progression mode (0=none, 1=consecutive, 2=repeat-item, 3=carousel, 4=shuffle)"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:759
+msgid "Set window to be fullscreen"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:760
+msgid "Video filter to use (\"none\" to disable)"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:761
+msgid "Audio filter to use (\"none\" to disable)"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:762
+msgid "Video sink to use"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-application.c:763
+msgid "Audio sink to use"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-info-window.c:88
+msgid "Hardware"
+msgstr "Hardver"
+
+#: src/bin/nyx-app/nyx-app-info-window.c:88
+msgid "Software"
+msgstr "Szoftver"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:315
+msgid "Restore default"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:418
+msgid "No configurable properties"
+msgstr ""
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:814
+msgid "Accurate"
+msgstr "Precíz"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:816
+msgid "Normal"
+msgstr "Normál"
+
+#: src/bin/nyx-app/nyx-app-preferences-window.c:818
+msgid "Fast"
+msgstr "Gyors"
+
+#: src/bin/nyx-app/nyx-app-utils.c:212
+msgid "No progression"
+msgstr "Ne haladjon"
+
+#: src/bin/nyx-app/nyx-app-utils.c:213
+msgid "Consecutive"
+msgstr "Folyamatos"
+
+#: src/bin/nyx-app/nyx-app-utils.c:214
+msgid "Repeat item"
+msgstr "Listaelem ismétlése"
+
+#: src/bin/nyx-app/nyx-app-utils.c:215
+msgid "Carousel"
+msgstr "Körkörös"
+
+#: src/bin/nyx-app/nyx-app-utils.c:216
+msgid "Shuffle"
+msgstr "Véletlenszerű"
+
+#: src/bin/nyx-app/nyx-app-window.c:1049
+msgid "Drop on title bar to play now or anywhere else to enqueue."
+msgstr "Húzza és ejtse a címsorra az azonnali lejátszáshoz vagy bárhova máshova a lejátszólistára vételhez."
+

@@ -1,0 +1,174 @@
+/* Adwaita OSD background color is unacceptable:
+ * https://gitlab.gnome.org/GNOME/libadwaita/-/issues/454 */
+nyx-gtk-video menubutton.osd,
+nyx-gtk-video button.osd,
+nyx-gtk-video box.osd,
+nyx-gtk-video nyx-gtk-title-header.osd,
+nyx-gtk-video .osd popover contents,
+nyx-gtk-video .osd popover arrow,
+nyx-gtk-video windowcontrols.osd button image {
+  background-color: rgba(38,38,38,0.8);
+}
+nyx-gtk-video button.osd:hover,
+nyx-gtk-video button.osd:checked,
+nyx-gtk-video windowcontrols.osd button:hover image,
+nyx-gtk-video windowcontrols.osd button:checked image {
+  background-color: rgba(63,63,63,0.8);
+}
+nyx-gtk-video button.osd:active,
+nyx-gtk-video windowcontrols.osd button:active image {
+  background-color: rgba(82,82,82,0.8);
+}
+nyx-gtk-video box.osd listview.osd,
+nyx-gtk-video windowcontrols.osd,
+nyx-gtk-video nyx-gtk-status.osd {
+  background-color: transparent;
+}
+
+nyx-gtk-video-placeholder {
+  background-color: black;
+}
+nyx-gtk-status box,
+nyx-gtk-video-placeholder box {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+nyx-gtk-status box image,
+nyx-gtk-video-placeholder box image {
+  -gtk-icon-size: 128px;
+  -gtk-icon-filter: opacity(0.6);
+}
+nyx-gtk-status.adapted box image,
+nyx-gtk-video-placeholder.adapted box image {
+  -gtk-icon-size: 96px;
+}
+
+nyx-gtk-billboard .sidebox {
+  padding: 12px;
+  border-radius: 9999px;
+}
+nyx-gtk-billboard .sidebox:dir(ltr) {
+  margin-left: 6px;
+}
+nyx-gtk-billboard .sidebox:dir(rtl) {
+  margin-right: 6px;
+}
+nyx-gtk-billboard .sidebox .progressbox {
+  margin-bottom: 6px;
+}
+nyx-gtk-billboard .sidebox .progressbox progressbar {
+  min-height: 90px;
+}
+nyx-gtk-billboard .sidebox .progressbox.overamp progress {
+  background: #c01c28;
+}
+nyx-gtk-billboard .sidebox .progresslabel:dir(ltr) {
+  margin-left: 6px;
+}
+nyx-gtk-billboard .sidebox .progresslabel:dir(rtl) {
+  margin-right: 6px;
+}
+nyx-gtk-billboard .messagebox {
+  margin: 6px;
+  padding: 12px;
+  min-width: 92px;
+}
+nyx-gtk-billboard .messagebox image {
+  -gtk-icon-size: 48px;
+}
+
+menubutton.circular,
+dropdown.circular button.toggle {
+  border-radius: 9999px;
+}
+.rounded {
+  border-radius: 19px;
+}
+
+nyx-gtk-title-header {
+  margin: 6px;
+  min-height: 38px;
+}
+nyx-gtk-title-header label {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+nyx-gtk-simple-controls .centerbox {
+  margin-bottom: 2px;
+}
+nyx-gtk-simple-controls .mainbox {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+nyx-gtk-simple-controls .mainbox button {
+  margin: 2px;
+}
+nyx-gtk-simple-controls .mainbox scale {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+nyx-gtk-simple-controls .mainbox popover button {
+  margin: 0px;
+}
+nyx-gtk-simple-controls .fullscreenbutton {
+  margin-bottom: 6px;
+}
+nyx-gtk-simple-controls .fullscreenbutton:dir(ltr) {
+  margin-right: 6px;
+}
+nyx-gtk-simple-controls .fullscreenbutton:dir(rtl) {
+  margin-left: 6px;
+}
+
+nyx-gtk-seek-bar scale trough highlight {
+  min-height: 6px;
+}
+nyx-gtk-seek-bar label {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+nyx-gtk-seek-bar scale marks .custom1 indicator {
+  color: tomato;
+}
+nyx-gtk-seek-bar scale marks .custom2 indicator {
+  color: goldenrod;
+}
+nyx-gtk-seek-bar scale marks .custom3 indicator {
+  color: limegreen;
+}
+
+nyx-gtk-extra-menu-button popover .spinsidebutton {
+  min-width: 28px;
+  min-height: 28px;
+}
+nyx-gtk-extra-menu-button popover .spinsidebutton:dir(ltr) {
+  margin-right: 2px;
+}
+nyx-gtk-extra-menu-button popover .spinsidebutton:dir(rtl) {
+  margin-left: 2px;
+}
+nyx-gtk-extra-menu-button popover spinbutton {
+  border-radius: 9999px;
+}
+nyx-gtk-extra-menu-button popover spinbutton button.up:dir(ltr) {
+  border-radius: 0px 9999px 9999px 0px;
+}
+nyx-gtk-extra-menu-button popover spinbutton button.up:dir(rtl) {
+  border-radius: 9999px 0px 0px 9999px;
+}
+nyx-gtk-extra-menu-button popover spinbutton button.up:dir(ltr) {
+  padding-right: 6px;
+}
+nyx-gtk-extra-menu-button popover spinbutton button.up:dir(rtl) {
+  padding-left: 6px;
+}
+nyx-gtk-menu-scrolled-window listview row {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+nyx-gtk-menu-scrolled-window listview row checkbutton label {
+  margin-left: 2px;
+  margin-right: 2px;
+}

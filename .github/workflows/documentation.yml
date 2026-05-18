@@ -29,7 +29,7 @@ jobs:
       run: |
         meson setup builddir -Dauto_features=enabled \
           -Denhancers-loader=disabled \
-          -Dclapper-app=disabled -Dvapi=disabled -Ddoc=true \
+          -Dnyx-app=disabled -Dvapi=disabled -Ddoc=true \
           -Dglimporter=auto -Dgluploader=auto -Drawimporter=auto
         cd builddir
         meson compile
@@ -39,15 +39,15 @@ jobs:
       run: |
         git config --global --add safe.directory $GITHUB_WORKSPACE
         git checkout gh-pages
-        rm -rf doc/clapper/*
-        rm -rf doc/clapper-gtk/*
-        mv builddir/doc/reference/clapper/clapper.toml doc/clapper/
-        mv builddir/doc/reference/clapper/clapper/* doc/clapper/
-        mv builddir/doc/reference/clapper-gtk/clapper-gtk.toml doc/clapper-gtk/
-        mv builddir/doc/reference/clapper-gtk/clapper-gtk/* doc/clapper-gtk/
+        rm -rf doc/nyx/*
+        rm -rf doc/nyx-gtk/*
+        mv builddir/doc/reference/nyx/nyx.toml doc/nyx/
+        mv builddir/doc/reference/nyx/nyx/* doc/nyx/
+        mv builddir/doc/reference/nyx-gtk/nyx-gtk.toml doc/nyx-gtk/
+        mv builddir/doc/reference/nyx-gtk/nyx-gtk/* doc/nyx-gtk/
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add doc/clapper/* doc/clapper-gtk/*
+        git add doc/nyx/* doc/nyx-gtk/*
         git commit -m "doc: Update" || true
     - name: Push changes
       uses: ad-m/github-push-action@master

@@ -1,5 +1,5 @@
-project('clapper', 'c',
-  version: '0.11.0',
+project('nyx', 'c',
+  version: '0.1.0',
   meson_version: '>= 0.64.0',
   license: 'LGPL-2.1-or-later AND GPL-3.0-or-later', # LGPL-2.1+ for libs and gst-plugin, GPL-3.0+ for app
   default_options: [
@@ -13,11 +13,11 @@ gst_req = '>= 1.24.0'
 gtk4_req = '>= 4.10.0'
 adw_req = '>= 1.5.0'
 
-clapper_version = meson.project_version().split('-')[0]
-version_array = clapper_version.split('.')
-clapper_version_suffix = '-' + version_array[0] + '.0'
+nyx_version = meson.project_version().split('-')[0]
+version_array = nyx_version.split('.')
+nyx_version_suffix = '-' + version_array[0] + '.0'
 
-clapper_api_name = meson.project_name() + clapper_version_suffix
+nyx_api_name = meson.project_name() + nyx_version_suffix
 
 devenv = environment()
 
@@ -33,7 +33,7 @@ localedir = get_option('localedir')
 includedir = get_option('includedir')
 optimization = get_option('optimization')
 
-clapper_libdir = join_paths(prefix, libdir, clapper_api_name)
+nyx_libdir = join_paths(prefix, libdir, nyx_api_name)
 build_optimized = optimization in ['2', '3', 's']
 
 gst_dep = dependency('gstreamer-1.0',
@@ -150,24 +150,24 @@ summary({
   'optimization': optimization,
 }, section: 'Directories')
 
-summary('clapper', build_clapper ? 'Yes' : 'No', section: 'Build')
-summary('clapper-gtk', build_clappergtk ? 'Yes' : 'No', section: 'Build')
-summary('clapper-app', build_clapperapp ? 'Yes' : 'No', section: 'Build')
+summary('nyx', build_nyx ? 'Yes' : 'No', section: 'Build')
+summary('nyx-gtk', build_nyxgtk ? 'Yes' : 'No', section: 'Build')
+summary('nyx-app', build_nyxapp ? 'Yes' : 'No', section: 'Build')
 summary('gst-plugin', build_gst_plugin ? 'Yes' : 'No', section: 'Build')
 summary('introspection', build_gir ? 'Yes' : 'No', section: 'Build')
 summary('vapi', build_vapi ? 'Yes' : 'No', section: 'Build')
 summary('doc', build_doc  ? 'Yes' : 'No', section: 'Build')
 
-if build_clapper
-  foreach name : clapper_possible_functionalities
-    summary(name, clapper_available_functionalities.contains(name)  ? 'Yes' : 'No', section: 'Functionalities')
+if build_nyx
+  foreach name : nyx_possible_functionalities
+    summary(name, nyx_available_functionalities.contains(name)  ? 'Yes' : 'No', section: 'Functionalities')
   endforeach
-  foreach name : clapper_possible_features
-    summary(name, clapper_available_features.contains(name) ? 'Yes' : 'No', section: 'Features')
+  foreach name : nyx_possible_features
+    summary(name, nyx_available_features.contains(name) ? 'Yes' : 'No', section: 'Features')
   endforeach
 endif
-if build_clapperapp
-  foreach name : clapperapp_possible_functionalities
-    summary(name, clapperapp_available_functionalities.contains(name)  ? 'Yes' : 'No', section: 'Functionalities')
+if build_nyxapp
+  foreach name : nyxapp_possible_functionalities
+    summary(name, nyxapp_available_functionalities.contains(name)  ? 'Yes' : 'No', section: 'Functionalities')
   endforeach
 endif

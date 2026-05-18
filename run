@@ -1,0 +1,10 @@
+#!/bin/sh
+# Automatically rebuild the player if any changes are made
+ninja -C build
+
+# Launch the player with the required environment configurations
+GSETTINGS_SCHEMA_DIR=./build/src/bin/nyx-app/data/glib-2.0/schemas \
+LD_LIBRARY_PATH=./build/src/lib/nyx:./build/src/lib/nyx-gtk \
+GST_PLUGIN_PATH=./build/src/lib/gst/plugin \
+NYX_SINK_IMPORTER_PATH=./build/src/lib/gst/plugin/importers \
+./build/src/bin/nyx-app/nyx "$@"

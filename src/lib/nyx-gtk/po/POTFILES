@@ -1,0 +1,7 @@
+src/lib/nyx-gtk/ui/nyx-gtk-extra-menu-button.ui
+src/lib/nyx-gtk/ui/nyx-gtk-video-placeholder.ui
+
+src/lib/nyx-gtk/nyx-gtk-extra-menu-button.c
+src/lib/nyx-gtk/nyx-gtk-status.c
+src/lib/nyx-gtk/nyx-gtk-stream-check-button.c
+src/lib/nyx-gtk/nyx-gtk-title-label.c

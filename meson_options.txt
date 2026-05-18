@@ -1,18 +1,18 @@
 # Build
-option('clapper',
+option('nyx',
   type: 'feature',
   value: 'auto',
-  description: 'Build Clapper library'
+  description: 'Build Nyx library'
 )
-option('clapper-gtk',
+option('nyx-gtk',
   type: 'feature',
   value: 'auto',
-  description: 'Build Clapper GTK integration library'
+  description: 'Build Nyx GTK integration library'
 )
-option('clapper-app',
+option('nyx-app',
   type: 'feature',
   value: 'auto',
-  description: 'Build Clapper application'
+  description: 'Build Nyx application'
 )
 option('gst-plugin',
   type: 'feature',
@@ -44,39 +44,39 @@ option('enhancers-loader',
 option('pipeline-preview',
   type: 'feature',
   value: 'auto',
-  description: 'Ability to preview GStreamer pipeline in clapper-app'
+  description: 'Ability to preview GStreamer pipeline in nyx-app'
 )
 
 # Features
 option('discoverer',
   type: 'feature',
   value: 'auto',
-  description: 'Build Clapper Discoverer feature'
+  description: 'Build Nyx Discoverer feature'
 )
 option('mpris',
   type: 'feature',
   value: 'auto',
-  description: 'Build Clapper MPRIS feature'
+  description: 'Build Nyx MPRIS feature'
 )
 option('server',
   type: 'feature',
   value: 'auto',
-  description: 'Build Clapper Server feature'
+  description: 'Build Nyx Server feature'
 )
 
 # GStreamer plugin options
 option('glimporter',
   type: 'feature',
   value: 'auto',
-  description: 'Build GL memory importer for clappersink'
+  description: 'Build GL memory importer for nyxsink'
 )
 option('gluploader',
   type: 'feature',
   value: 'auto',
-  description: 'Build GL uploader for clappersink'
+  description: 'Build GL uploader for nyxsink'
 )
 option('rawimporter',
   type: 'feature',
   value: 'auto',
-  description: 'Build RAW system memory importer for clappersink'
+  description: 'Build RAW system memory importer for nyxsink'
 )

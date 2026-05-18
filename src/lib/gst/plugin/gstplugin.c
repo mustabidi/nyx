@@ -22,7 +22,7 @@
 
 #include <gmodule.h>
 
-#include "gstclappersink.h"
+#include "gstnyxsink.h"
 
 static gboolean
 plugin_init (GstPlugin *plugin)
@@ -31,12 +31,12 @@ plugin_init (GstPlugin *plugin)
     return FALSE;
 
   gst_plugin_add_dependency_simple (plugin,
-      NULL, CLAPPER_SINK_IMPORTER_PATH, NULL,
+      NULL, NYX_SINK_IMPORTER_PATH, NULL,
       GST_PLUGIN_DEPENDENCY_FLAG_NONE);
 
-  return GST_ELEMENT_REGISTER (clappersink, plugin);
+  return GST_ELEMENT_REGISTER (nyxsink, plugin);
 }
 
 GST_PLUGIN_DEFINE (GST_VERSION_MAJOR, GST_VERSION_MINOR,
-    clapper, "Clapper elements", plugin_init, VERSION, "LGPL",
+    nyx, "Nyx elements", plugin_init, VERSION, "LGPL",
     GST_PACKAGE_NAME, GST_PACKAGE_ORIGIN)
