@@ -1,7 +1,7 @@
 # Nyx Media Player
 [![Build Status](https://github.com/moon/nyx/actions/workflows/build.yml/badge.svg)](https://github.com/moon/nyx)
 
-**Nyx** is a celestial, dark-themed, modern Linux media player built for visual excellence and premium user experiences. A high-fidelity fork of the open-source Nyx player, Nyx brings a cohesive, night-themed celestial aesthetic forced into Libadwaita dark mode, alongside powerful background traversal automation.
+**Nyx** is a celestial, dark-themed, modern Linux media player built for visual excellence and premium user experiences. Nyx brings a cohesive, night-themed celestial aesthetic forced into Libadwaita dark mode, alongside powerful background traversal automation.
 
 Powered by [GStreamer](https://gstreamer.freedesktop.org/) and built for the GNOME desktop environment using [GTK4](https://www.gtk.org/) and [Libadwaita](https://gitlab.gnome.org/GNOME/libadwaita), Nyx provides a gorgeous, state-of-the-art interface that makes enjoying your favorite media absolute bliss.
 

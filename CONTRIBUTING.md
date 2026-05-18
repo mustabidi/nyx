@@ -1,6 +1,6 @@
 # Contributing to Nyx
 
-We love contributions! Since **Nyx** is forced forced into forced Libadwaita dark mode and implements complex asynchronous worker thread layers for directory playback, please follow these guidelines to keep the codebase elegant and performant.
+We love contributions! Since **Nyx** is natively forced into Libadwaita dark mode and implements complex asynchronous worker thread layers for directory playback, please follow these guidelines to keep the codebase elegant and performant.
 
 ---
 
