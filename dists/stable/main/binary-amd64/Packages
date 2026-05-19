@@ -1,0 +1,16 @@
+Package: nyx-player
+Version: 0.1.0
+Architecture: amd64
+Maintainer: Nyx Developer <developer@example.com>
+Depends: libglib2.0-0 (>= 2.76.0), libgtk-4-1 (>= 4.10.0), libadwaita-1-0 (>= 1.5.0), libgstreamer1.0-0 (>= 1.24.0)
+Filename: pool/main/n/nyx-player/nyx-player_0.1.0_amd64.deb
+Size: 1208436
+MD5sum: d4b9c81329c8e3522882dce4b8d2bb86
+SHA1: 10a7c315ada39078daa053d70f58d7066d017e76
+SHA256: ad0cdcf0473cfb52228e00fd4c9d7a17d7fdb0e484caa434388b689a26d2e908
+Section: video
+Priority: optional
+Description: Nyx Media Player
+ A celestial, dark-themed, modern Linux media player built for visual excellence
+ and premium user experiences.
+
