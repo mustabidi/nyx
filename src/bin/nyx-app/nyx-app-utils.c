@@ -227,7 +227,31 @@ gboolean
 nyx_app_utils_is_subtitles_file (GFile *file)
 {
   GFileInfo *info;
+  gchar *basename;
   gboolean is_subs = FALSE;
+
+  if (!file)
+    return FALSE;
+
+  basename = g_file_get_basename (file);
+  if (basename) {
+    const gchar *dot = strrchr (basename, '.');
+    if (dot && dot != basename && *(dot + 1) != '\0') {
+      gchar *ext_lower = g_ascii_strdown (dot + 1, -1);
+      if (strcmp (ext_lower, "srt") == 0 ||
+          strcmp (ext_lower, "vtt") == 0 ||
+          strcmp (ext_lower, "ass") == 0 ||
+          strcmp (ext_lower, "ssa") == 0 ||
+          strcmp (ext_lower, "sub") == 0) {
+        is_subs = TRUE;
+      }
+      g_free (ext_lower);
+    }
+    g_free (basename);
+  }
+
+  if (is_subs)
+    return TRUE;
 
   if ((info = g_file_query_info (file,
       G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE ","
@@ -762,7 +786,8 @@ on_dir_scan_complete (GPtrArray *items, GError *error, gpointer user_data)
 
   for (i = 0; i < items->len; i++) {
     NyxMediaItem *item = g_ptr_array_index (items, i);
-    nyx_app_sub_finder_find_for_item_async (item, NULL);
+    /* Resolve subtitles synchronously before queueing to prevent pipeline races */
+    nyx_app_sub_finder_find_for_item_sync (item);
     nyx_queue_add_item (ctx->queue, item);
   }
 
@@ -812,7 +837,8 @@ nyx_app_utils_handle_file_async (GFile *file,
       GST_DEBUG ("Adding media item with URI: %s",
           nyx_media_item_get_uri (item));
 
-      nyx_app_sub_finder_find_for_item_async (item, cancellable);
+      /* Resolve subtitles synchronously before queueing to prevent pipeline races */
+      nyx_app_sub_finder_find_for_item_sync (item);
 
       nyx_queue_add_item (queue, item);
 

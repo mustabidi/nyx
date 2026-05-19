@@ -448,12 +448,14 @@ nyx_player_set_current_audio_decoder (NyxPlayer *self, GstElement *element)
   }
 }
 
-void
-nyx_player_set_pending_item (NyxPlayer *self, NyxMediaItem *pending_item,
-    NyxQueueItemChangeMode mode)
+static void
+nyx_player_set_pending_item_internal (NyxPlayer *self, NyxMediaItem *pending_item,
+    NyxQueueItemChangeMode mode, gboolean load_suburi)
 {
   const gchar *uri = NULL;
   gchar *suburi = NULL;
+  gboolean has_suburi = FALSE;
+  gboolean use_suburi = FALSE;
 
   /* We cannot do gapless/instant with pending suburi in place,
    * do a check and if necessary use normal mode instead */
@@ -472,6 +474,10 @@ nyx_player_set_pending_item (NyxPlayer *self, NyxMediaItem *pending_item,
     suburi = nyx_media_item_get_suburi (pending_item);
   }
 
+  has_suburi = (suburi && *suburi);
+  use_suburi = has_suburi && mode == NYX_QUEUE_ITEM_CHANGE_NORMAL
+      && (load_suburi || !self->use_playbin3);
+
   GST_INFO_OBJECT (self, "Changing item with mode %u, URI: \"%s\", SUBURI: \"%s\"",
       mode, GST_STR_NULL (uri), GST_STR_NULL (suburi));
 
@@ -480,11 +486,10 @@ nyx_player_set_pending_item (NyxPlayer *self, NyxMediaItem *pending_item,
    * so we cannot schedule an invoke of another thread there */
   GST_OBJECT_LOCK (self);
   gst_object_replace ((GstObject **) &self->pending_item, GST_OBJECT_CAST (pending_item));
+  self->pending_suburi_reload = (self->use_playbin3 && has_suburi && !use_suburi);
   GST_OBJECT_UNLOCK (self);
 
-  /* GStreamer does not support changing suburi in gapless/instant mode */
-  if (mode == NYX_QUEUE_ITEM_CHANGE_NORMAL)
-    g_object_set (self->playbin, "suburi", suburi, NULL);
+  g_object_set (self->playbin, "suburi", (use_suburi) ? suburi : NULL, NULL);
 
   if (uri) {
     if (mode == NYX_QUEUE_ITEM_CHANGE_INSTANT)
@@ -497,6 +502,20 @@ nyx_player_set_pending_item (NyxPlayer *self, NyxMediaItem *pending_item,
   }
 
   g_free (suburi);
+}
+
+void
+nyx_player_set_pending_item (NyxPlayer *self, NyxMediaItem *pending_item,
+    NyxQueueItemChangeMode mode)
+{
+  nyx_player_set_pending_item_internal (self, pending_item, mode, FALSE);
+}
+
+void
+nyx_player_set_pending_item_with_suburi (NyxPlayer *self, NyxMediaItem *pending_item,
+    NyxQueueItemChangeMode mode)
+{
+  nyx_player_set_pending_item_internal (self, pending_item, mode, TRUE);
 }
 
 static void

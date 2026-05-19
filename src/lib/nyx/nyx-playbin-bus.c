@@ -220,6 +220,34 @@ _handle_error_msg (GstMessage *msg, NyxPlayer *player)
 
   dump_dot_file (player, "ERROR");
 
+  /* Special case: playbin3 races when both uri + suburi are set.
+   * The subtitle file (e.g. .srt) demuxes near-instantly, so its
+   * streams-selected fires BEFORE the main video stream-collection
+   * arrives. playbin3 sees only a text track and emits these errors
+   * (code 11 = DEMUX/TYPE_NOT_FOUND, code 1 = FAILED/Internal data stream error).
+   *
+   * When we know a suburi is active, this is a transient GStreamer
+   * ordering artefact — the video collection will arrive in milliseconds.
+   * Suppress the error and let the pipeline continue naturally.
+   */
+  if (g_strcmp0 (g_quark_to_string (error->domain), "gst-stream-error-quark") == 0) {
+    if (error->code == 11 || error->code == 1) {
+      gchar *current_suburi = NULL;
+      g_object_get (player->playbin, "suburi", &current_suburi, NULL);
+
+      if (current_suburi != NULL) {
+        GST_DEBUG_OBJECT (player,
+            "Suppressing transient playbin3 race error while suburi is set: %s (code: %d)",
+            error->message, error->code);
+        g_free (current_suburi);
+        g_clear_error (&error);
+        g_free (debug_info);
+        return;
+      }
+      g_free (current_suburi);
+    }
+  }
+
   GST_OBJECT_LOCK (player);
   player->had_error = TRUE;
   GST_OBJECT_UNLOCK (player);
@@ -676,6 +704,34 @@ _handle_state_changed_msg (GstMessage *msg, NyxPlayer *player)
 
     _update_current_duration (player);
 
+    if (player->pending_suburi_reload && player->played_item) {
+      gchar *suburi = nyx_media_item_get_suburi (player->played_item);
+      if (suburi) {
+        gint64 current_pos = GST_CLOCK_TIME_NONE;
+
+        player->pending_suburi_reload = FALSE;
+
+        if (gst_element_query_position (player->playbin, GST_FORMAT_TIME, &current_pos)
+            && GST_CLOCK_TIME_IS_VALID (current_pos)) {
+          player->pending_position = (gdouble) current_pos / GST_SECOND;
+        }
+
+        GST_DEBUG_OBJECT (player,
+            "Reloading after clean preroll to attach external suburi: %s",
+            suburi);
+
+        gst_element_set_state (player->playbin, GST_STATE_READY);
+        nyx_player_set_pending_item_with_suburi (player, player->played_item,
+            NYX_QUEUE_ITEM_CHANGE_NORMAL);
+        if (player->target_state > GST_STATE_READY)
+          gst_element_set_state (player->playbin, player->target_state);
+
+        g_free (suburi);
+        return;
+      }
+      player->pending_suburi_reload = FALSE;
+    }
+
     if (!player->use_playbin3)
       nyx_player_playbin_update_current_decoders (player);
   }
@@ -744,16 +800,34 @@ _handle_item_suburi_change_msg (GstMessage *msg, const GstStructure *structure, 
       _FIELD_QUARK (MEDIA_ITEM), NYX_TYPE_MEDIA_ITEM, &item,
       NULL);
 
-  if (item == player->played_item || item == player->pending_item) {
-    if (player->current_state >= GST_STATE_PAUSED) {
-      gst_element_set_state (player->playbin, GST_STATE_READY);
-      nyx_player_set_pending_item (player, item, NYX_QUEUE_ITEM_CHANGE_NORMAL);
-      gst_element_set_state (player->playbin, player->target_state);
-    } else {
-      gchar *suburi = nyx_media_item_get_suburi (item);
-      g_object_set (player->playbin, "suburi", suburi, NULL);
-      g_free (suburi);
+  if (item == player->played_item && player->current_state >= GST_STATE_PAUSED) {
+    /* Case 1: Subtitle arrived while video is actively playing.
+     * Save position, reset to READY, reload item (now with suburi), restore. */
+    gint64 current_pos = GST_CLOCK_TIME_NONE;
+
+    if (gst_element_query_position (player->playbin, GST_FORMAT_TIME, &current_pos)) {
+      if (GST_CLOCK_TIME_IS_VALID (current_pos)) {
+        player->pending_position = (gdouble) current_pos / GST_SECOND;
+        GST_DEBUG_OBJECT (player, "Saved position for subtitle hot-swap: %.2lf s", player->pending_position);
+      }
     }
+
+    gst_element_set_state (player->playbin, GST_STATE_READY);
+    nyx_player_set_pending_item_with_suburi (player, item, NYX_QUEUE_ITEM_CHANGE_NORMAL);
+    gst_element_set_state (player->playbin, player->target_state);
+
+  } else if (item == player->pending_item || item == player->played_item) {
+    /* Case 2: Subtitle arrived while item is still loading/transitioning.
+     * playbin3 ignores direct 'suburi' property changes after URI is set.
+     * We must reset to READY to reload the item with the new suburi. */
+    gchar *suburi = nyx_media_item_get_suburi (item);
+    GST_DEBUG_OBJECT (player, "Subtitle arrived during load; resetting pipeline for suburi: %s", GST_STR_NULL (suburi));
+    g_free (suburi);
+
+    gst_element_set_state (player->playbin, GST_STATE_READY);
+    nyx_player_set_pending_item_with_suburi (player, item, NYX_QUEUE_ITEM_CHANGE_NORMAL);
+    if (player->target_state > GST_STATE_READY)
+      gst_element_set_state (player->playbin, player->target_state);
   }
 
   gst_object_unref (item);

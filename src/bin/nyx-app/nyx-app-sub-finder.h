@@ -23,4 +23,7 @@
 // Asynchronously search and set the best matching subtitle for a media item
 void nyx_app_sub_finder_find_for_item_async (NyxMediaItem *item, GCancellable *cancellable);
 
+// Synchronously search and set the best matching subtitle for a media item (prevents GStreamer load-time races)
+void nyx_app_sub_finder_find_for_item_sync (NyxMediaItem *item);
+
 #endif // NYX_APP_SUB_FINDER_H

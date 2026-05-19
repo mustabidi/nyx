@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+
+echo "Running post-installation configuration..."
+
+# Compile GSettings schemas in /usr/share
+if [ -x /usr/bin/glib-compile-schemas ]; then
+    echo "Compiling GSettings schemas..."
+    glib-compile-schemas /usr/share/glib-2.0/schemas || true
+fi
+
+# Update desktop database in /usr/share
+if [ -x /usr/bin/update-desktop-database ]; then
+    echo "Updating desktop database..."
+    update-desktop-database -q /usr/share/applications || true
+fi
+
+# Update icon cache in /usr/share
+if [ -x /usr/bin/gtk4-update-icon-cache ]; then
+    echo "Updating GTK icon cache..."
+    gtk4-update-icon-cache -q -t -f /usr/share/icons/hicolor || true
+fi
+
+# Run ldconfig to register the new system libraries under /usr/lib
+echo "Updating dynamic linker cache..."
+ldconfig || true
+
+echo "Post-installation configuration complete."

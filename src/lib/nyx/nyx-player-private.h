@@ -87,6 +87,7 @@ struct _NyxPlayer
   /* Extra params */
   gboolean use_playbin3; // when using playbin3
   gboolean had_error; // so we do not do stuff after error
+  gboolean pending_suburi_reload; // playbin3: reload once after video-only preroll
   gboolean seeking; // during seek operation
   gboolean stepping; // during frame step operation
   gboolean speed_changing; // during rate change operation
@@ -147,6 +148,8 @@ void nyx_player_handle_playbin_common_prop_changed (NyxPlayer *player, const gch
 void nyx_player_handle_playbin_rate_changed (NyxPlayer *player, gdouble speed);
 
 void nyx_player_set_pending_item (NyxPlayer *player, NyxMediaItem *pending_item, NyxQueueItemChangeMode mode);
+
+void nyx_player_set_pending_item_with_suburi (NyxPlayer *player, NyxMediaItem *pending_item, NyxQueueItemChangeMode mode);
 
 void nyx_player_take_stream_collection (NyxPlayer *player, GstStreamCollection *collection);
 

@@ -659,7 +659,9 @@ add_item_from_file (GFile *file, NyxQueue *queue)
   GST_DEBUG ("Adding media item with URI: %s",
       nyx_media_item_get_uri (item));
 
-  nyx_app_sub_finder_find_for_item_async (item, NULL);
+  /* Resolve the subtitle synchronously so GStreamer gets BOTH the URI and SUBURI
+   * simultaneously on load, completely avoiding pipeline-reset races. */
+  nyx_app_sub_finder_find_for_item_sync (item);
 
   nyx_queue_add_item (queue, item);
 

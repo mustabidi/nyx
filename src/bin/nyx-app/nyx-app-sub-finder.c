@@ -339,3 +339,52 @@ nyx_app_sub_finder_find_for_item_async (NyxMediaItem *item, GCancellable *cancel
 
   g_object_unref (gtask);
 }
+
+void
+nyx_app_sub_finder_find_for_item_sync (NyxMediaItem *item)
+{
+  const gchar *uri;
+  GFile *media_file;
+  gchar *movie_base;
+  gchar *movie_name;
+  SubFinderTask task = {0};
+
+  g_return_if_fail (NYX_IS_MEDIA_ITEM (item));
+
+  uri = nyx_media_item_get_uri (item);
+  if (!uri || !g_str_has_prefix (uri, "file://"))
+    return; // Can only search local files
+
+  GST_DEBUG_CATEGORY_INIT (GST_CAT_DEFAULT, "nyxappsubfinder", 0,
+      "Nyx App Sub Finder");
+
+  media_file = g_file_new_for_uri (uri);
+  movie_base = g_file_get_basename (media_file);
+  movie_name = get_base_without_extension (movie_base);
+
+  task.item = item;
+  task.parent_dir = g_file_get_parent (media_file);
+  task.movie_base_lower = g_ascii_strdown (movie_name, -1);
+  task.candidates = g_ptr_array_new_with_free_func ((GDestroyNotify) sub_candidate_free);
+
+  g_free (movie_name);
+  g_free (movie_base);
+  g_object_unref (media_file);
+
+  if (task.parent_dir) {
+    scan_directory_recursive (task.parent_dir, &task, 0, NULL);
+
+    if (task.candidates->len > 0) {
+      SubCandidate *best;
+      g_ptr_array_sort (task.candidates, sub_candidate_compare);
+      best = g_ptr_array_index (task.candidates, 0);
+
+      GST_INFO ("Synchronous recursive subtitle resolved: %s (score: %d)", best->uri, best->score);
+      nyx_media_item_set_suburi (item, best->uri);
+    }
+    g_object_unref (task.parent_dir);
+  }
+
+  g_free (task.movie_base_lower);
+  g_ptr_array_unref (task.candidates);
+}
