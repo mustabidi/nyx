@@ -42,7 +42,7 @@ You can add the official Nyx APT repository to your system to easily install and
 
 1. Download and add the repository GPG signing key:
 ```sh
-wget -O- https://mustabidi.github.io/nyx/nyx-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/nyx-archive-keyring.gpg
+wget -qO- https://mustabidi.github.io/nyx/nyx-archive-keyring.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/nyx-archive-keyring.gpg > /dev/null
 ```
 
 2. Add the repository to your system's sources list:
