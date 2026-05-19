@@ -81,6 +81,7 @@ nyxapp_sources = [
   'nyx-app-queue-progression-item.c',
   'nyx-app-queue-progression-model.c',
   'nyx-app-queue-selection.c',
+  'nyx-app-sub-finder.c',
   'nyx-app-types.c',
   'nyx-app-uri-dialog.c',
   'nyx-app-utils.c',

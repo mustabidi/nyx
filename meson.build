@@ -1,5 +1,5 @@
 project('nyx', 'c',
-  version: '0.1.0',
+  version: '1.1.0',
   meson_version: '>= 0.64.0',
   license: 'LGPL-2.1-or-later AND GPL-3.0-or-later', # LGPL-2.1+ for libs and gst-plugin, GPL-3.0+ for app
   default_options: [

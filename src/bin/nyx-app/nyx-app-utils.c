@@ -23,6 +23,7 @@
 #include "nyx-app-utils.h"
 #include "nyx-app-media-item-box.h"
 #include "nyx-app-dir-scanner.h"
+#include "nyx-app-sub-finder.h"
 
 #ifdef HAVE_GRAPHVIZ
 #include <graphviz/cgraph.h>
@@ -761,6 +762,7 @@ on_dir_scan_complete (GPtrArray *items, GError *error, gpointer user_data)
 
   for (i = 0; i < items->len; i++) {
     NyxMediaItem *item = g_ptr_array_index (items, i);
+    nyx_app_sub_finder_find_for_item_async (item, NULL);
     nyx_queue_add_item (ctx->queue, item);
   }
 
@@ -797,6 +799,9 @@ nyx_app_utils_handle_file_async (GFile *file,
 
     GST_DEBUG ("Adding media item with URI: %s",
         nyx_media_item_get_uri (item));
+
+    nyx_app_sub_finder_find_for_item_async (item, cancellable);
+
     nyx_queue_add_item (queue, item);
 
     gst_object_unref (item);

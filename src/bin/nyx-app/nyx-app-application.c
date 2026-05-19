@@ -30,6 +30,7 @@
 #include "nyx-app-preferences-window.h"
 #include "nyx-app-about-dialog.h"
 #include "nyx-app-utils.h"
+#include "nyx-app-sub-finder.h"
 
 #define PERCENTAGE_ROUND(a) (round ((gdouble) a / 0.01) * 0.01)
 
@@ -657,6 +658,9 @@ add_item_from_file (GFile *file, NyxQueue *queue)
 
   GST_DEBUG ("Adding media item with URI: %s",
       nyx_media_item_get_uri (item));
+
+  nyx_app_sub_finder_find_for_item_async (item, NULL);
+
   nyx_queue_add_item (queue, item);
 
   gst_object_unref (item);
