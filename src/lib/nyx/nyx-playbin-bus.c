@@ -745,9 +745,15 @@ _handle_item_suburi_change_msg (GstMessage *msg, const GstStructure *structure, 
       NULL);
 
   if (item == player->played_item || item == player->pending_item) {
-    gst_element_set_state (player->playbin, GST_STATE_READY);
-    nyx_player_set_pending_item (player, item, NYX_QUEUE_ITEM_CHANGE_NORMAL);
-    gst_element_set_state (player->playbin, player->target_state);
+    if (player->current_state >= GST_STATE_PAUSED) {
+      gst_element_set_state (player->playbin, GST_STATE_READY);
+      nyx_player_set_pending_item (player, item, NYX_QUEUE_ITEM_CHANGE_NORMAL);
+      gst_element_set_state (player->playbin, player->target_state);
+    } else {
+      gchar *suburi = nyx_media_item_get_suburi (item);
+      g_object_set (player->playbin, "suburi", suburi, NULL);
+      g_free (suburi);
+    }
   }
 
   gst_object_unref (item);

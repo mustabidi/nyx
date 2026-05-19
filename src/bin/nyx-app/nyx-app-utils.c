@@ -795,16 +795,29 @@ nyx_app_utils_handle_file_async (GFile *file,
   } else if (type == G_FILE_TYPE_REGULAR ||
       type == G_FILE_TYPE_UNKNOWN ||
       type == G_FILE_TYPE_SYMBOLIC_LINK) {
-    NyxMediaItem *item = nyx_media_item_new_from_file (file);
+    if (nyx_app_utils_is_subtitles_file (file)) {
+      NyxMediaItem *target_item = nyx_queue_get_current_item (queue);
 
-    GST_DEBUG ("Adding media item with URI: %s",
-        nyx_media_item_get_uri (item));
+      if (target_item) {
+        gchar *suburi = g_file_get_uri (file);
+        GST_INFO ("Dropped/passed subtitle file: %s. Applying to currently playing item.", suburi);
+        nyx_media_item_set_suburi (target_item, suburi);
+        g_free (suburi);
+      } else {
+        GST_WARNING ("Subtitle file dropped, but no active media item to apply it to.");
+      }
+    } else {
+      NyxMediaItem *item = nyx_media_item_new_from_file (file);
 
-    nyx_app_sub_finder_find_for_item_async (item, cancellable);
+      GST_DEBUG ("Adding media item with URI: %s",
+          nyx_media_item_get_uri (item));
 
-    nyx_queue_add_item (queue, item);
+      nyx_app_sub_finder_find_for_item_async (item, cancellable);
 
-    gst_object_unref (item);
+      nyx_queue_add_item (queue, item);
+
+      gst_object_unref (item);
+    }
   } else {
     GST_WARNING ("Unsupported file type %d for '%s'",
         type, g_file_peek_path (file));
