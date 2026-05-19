@@ -2,10 +2,10 @@ Origin: Nyx APT Repository
 Label: Nyx Media Player
 Suite: stable
 Codename: stable
-Date: Tue, 19 May 2026 00:48:24 GMT
+Date: Tue, 19 May 2026 00:53:57 GMT
 Architectures: amd64
 Components: main
 Description: Celestial, dark-themed modern Linux media player
 SHA256:
- 784701751d944b089aa4a25bd6e68d0ed1ec9f733278a0cf4cfda5ec6c1b7aa4 1426 main/binary-amd64/Packages
- eb2cb543d59fdc61be922d40ad9a803403f3f01af6da73c915519dd4044e818e 596 main/binary-amd64/Packages.gz
+ 932df6e81cb96d0f35dfd7ca3ccbadcda0de8805bc64b1043b7486821c6dc6ae 1426 main/binary-amd64/Packages
+ 4411838f97bc6b06cfdd51c504885bfe889bd303015e86a395f9f3ac0df90d1d 593 main/binary-amd64/Packages.gz
