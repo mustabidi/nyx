@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Nyx APT Repository
+Label: Nyx Media Player
+Suite: stable
+Codename: stable
+Architectures: amd64
+Components: main
+Description: Celestial, dark-themed modern Linux media player
+SHA256:
+ 9e264545d1a4e3e1ffd89cf8b64a3e4e13b0d26cf2e6d8162231d76ece139319 612 main/binary-amd64/Packages
+ 591f35f426cd0acf97f570af1c44ce0ae9639129bffc03b841a4b34e4e487f6e 451 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE72XhjdIud/bmxOqjLP6+IghDkfgFAmoLqigACgkQLP6+IghD
+kfieVg//eeGU2huTJ0HANmxY+MiYOKtCsKFmwF6yeLKS9m91Zh0dpfnZyjIIEOR6
+CS6v3P3xfcxZIRBytC+N4JK7tdxqnrrh/Jh+/eDvpBzhWrGz7QuxHa08Sv4QbMnj
+6UD20IdRbASNDAq+aqrs0E9Zmjumxejq3UEVyVsBPhUdzvQEQH6waDmZqrtlI/C4
+riDe4t13UBT6MNOTYFtvtb5uQJ7159WqSR+WETqtz4dgIJ4lDa7y1FRfrOZAmB1o
+3L+Uddpw9Bb2X0mwLGOyKYdNOa38il2qKgg3uHhHGooMtpABv87f06iJXzLiqQOE
+mJL9TZuVvKxjhOOO4Ti+Ri2FccoaynlCzQezMc0hHjY/joihpKxScoTXyc80iFZ8
+1nOEY85Mv05NNzjXZIcHQH35MYcjwEgr6BxI903z9pqQj9/iPz0qHbUwMd/xsba4
+sBBVZ0wSN8i92e75rjYJHuJAb8Yg3ow7qNcP6WXc60jzzhr351HDvcAjlBgjSx/i
+lT8IoYp0dEwHQSS4K8Lolx3Ts+HoM8DLNyqX//s6E4YP58JNga4yPI4w2pcdR1pm
+PAPid3ov2bEsxP3hNZAO4C5IuPcDFEhBVLFMablImcifWqglhQlgrsjxPQsFpNhW
+QgHIl+RGP3U4li4JOhp4Kkto+YgeUpmK4L+Dk/V9ZYXsi1JBJJo=
+=4A1h
+-----END PGP SIGNATURE-----
