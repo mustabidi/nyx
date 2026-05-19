@@ -5,26 +5,26 @@ Origin: Nyx APT Repository
 Label: Nyx Media Player
 Suite: stable
 Codename: stable
-Date: Tue, 19 May 2026 01:14:06 GMT
+Date: Tue, 19 May 2026 01:18:15 GMT
 Architectures: amd64
 Components: main
 Description: Celestial, dark-themed modern Linux media player
 SHA256:
- 40114a61bd76b578650f91af927be5f90fa12983ec3616b4b6609af905cde568 1426 main/binary-amd64/Packages
- 0a39484bc6a7b298a782699c2649664c6667d4340495013f2152928d2ffce562 596 main/binary-amd64/Packages.gz
+ 29e1228ad1abd730b21d4e3fa5c7a9332993c8d358f087b3edc0445b38b7d9d7 1426 main/binary-amd64/Packages
+ e77c2ae1e61afb8d680447b1f8ba110caa3f88ad0a3e00fe6e881b25a0d60662 594 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE72XhjdIud/bmxOqjLP6+IghDkfgFAmoLuV4ACgkQLP6+IghD
-kfgCgw/8DJetzuY7JyNEVc7/b80SX8GAovVqYlLiIwXDGQCtp/REfyVrtFvbOBT/
-Icx0ahcbHXmUYtQGFHjzVWeBtnDGe8dENSIGbxs3WlaaGeMeFOfsMqLk6vTzNPMn
-THqfbayEdrp2cMfuAL475JfFbg8iga/DN+LSY2RA+Rl7IEkfoArrdQVllwEw7/3f
-tRWTaZlQsLRVhIkUGOYbfkkd9oXxMFloPGqQLn7WFKRDYAZil4+GcWn9/jc4rLA7
-iYsm1y+HzN4RpnAuScJdUSJfgcaIAIg8bDFGPUwtY0AOV0WFW9DkOb7vqycs0Eam
-jFzCw2yUgipDDbd3GUAM1p9+S45ZHPpVlk8ulORCPhghrApQD+6wxaMuVtC0BgBW
-OycvKDUQr1JmsC0R/UJs+jCrBZWAqiFI9cm9YyGgI6i2u9t5wNuJnynTSWpLD6V7
-1bNGftNPiX4o5ViWL++UBFqZnjRizn0qQR1a+YQXfqIszX9xin2Iu3N5N35kQqum
-OBOpI+7I+dafk7OPDmj+ck6ZBDyXHd4qYdav/w7Ar9ChIkgIeRykeKWWxMHXqfqm
-WN0KDg11PTQgCu9Bp3KR9PzHptRiwhi22Oql7tHQBN5C+rB19lZSVbANeXnf2mAH
-vexbaTZUlgK+Le+qwFx0K0IC8OnAHn78+h+CrySP4WN/jwLqfR0=
-=7ODu
+iQIzBAEBCgAdFiEE72XhjdIud/bmxOqjLP6+IghDkfgFAmoLulcACgkQLP6+IghD
+kfjooQ//V9i7wZEQwrTK2whu54j4MCMW9ppWF6f0xkP6SlbdcEaMQ6/p9HoVGbto
+8qt1BhsqgKESWAZCxCzXT5J3WVZZd/OtaVRsfrGNYUE+I90dDfuWrVI999lrDwKb
+tZxj/vX9M8OsxQzoR9cxUk+y2UQaytcg8XBXnC2Z0iygiAV3w2jDaIk3BbUKBiQw
+ETrAmp3qCOzdtMrJOLAKRDJT3KN3o71w4uLyfGFHXAP+2MFMLBfCLUSFMM9FJdbF
+zn+WMEYHinCWTt+1JWQJiSm5qX9ROIz/4hmjw5p2bjlfKIA3/pmY39Nw02rNnDIS
+gqlkgsqLQQFl3f5f87ZSbR772D4AjgLPLrbJXwPs673s0+pN6tzORUbJjfiuLe4w
+sMAbkdM1bsMwsCXkEv0OD0MqRVQnlRkTMUQCIOuzspiYV0ovDhx2R6CnjaTO2g33
+HRQf6oujDC5udXREaPXnjMvCXeMkh9zgzEYXHWzdoJXhTv2UDOe1HSLkF9I5gPon
+LWBtVv5yaSn4jJK+wPbXF5ATwcUD5Eb4M6YBL+mpjf9U05gQBPJ7j957kWJoUDLU
+PJJ1dW8478ZZLotShm/uSnCNRiEmvG4nNey4WNb7rnYMfGP+paJZyN44YTStUHcT
+gB2nXVbrrt2kG/KNhSSF004MFcHOlGD0zHYDAaUnXVb+LgjNJtU=
+=Qdra
 -----END PGP SIGNATURE-----
