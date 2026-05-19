@@ -744,7 +744,7 @@ _handle_item_suburi_change_msg (GstMessage *msg, const GstStructure *structure, 
       _FIELD_QUARK (MEDIA_ITEM), NYX_TYPE_MEDIA_ITEM, &item,
       NULL);
 
-  if (item == player->played_item) {
+  if (item == player->played_item || item == player->pending_item) {
     gst_element_set_state (player->playbin, GST_STATE_READY);
     nyx_player_set_pending_item (player, item, NYX_QUEUE_ITEM_CHANGE_NORMAL);
     gst_element_set_state (player->playbin, player->target_state);
