@@ -6,5 +6,5 @@ Architectures: amd64
 Components: main
 Description: Celestial, dark-themed modern Linux media player
 SHA256:
- 9e264545d1a4e3e1ffd89cf8b64a3e4e13b0d26cf2e6d8162231d76ece139319 612 main/binary-amd64/Packages
- 591f35f426cd0acf97f570af1c44ce0ae9639129bffc03b841a4b34e4e487f6e 451 main/binary-amd64/Packages.gz
+ 0392cc297070e1f3c4e17778c3b0f828fcbcc336a81664e316962c435117ecec 633 main/binary-amd64/Packages
+ 3a0571ef3bf145f760a12eafde52c8a540f1eee4065d33dae2d8c595c74bc35b 457 main/binary-amd64/Packages.gz

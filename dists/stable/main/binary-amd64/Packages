@@ -1,13 +1,13 @@
-Package: nyx
+Package: nyx-player
 Version: 0.1.0
 Architecture: amd64
 Maintainer: Nyx Developer <developer@example.com>
 Depends: libglib2.0-0 (>= 2.76.0), libgtk-4-1 (>= 4.10.0), libadwaita-1-0 (>= 1.5.0), libgstreamer1.0-0 (>= 1.24.0)
-Filename: pool/main/n/nyx/nyx_0.1.0_amd64.deb
-Size: 1208012
-MD5sum: a532fda4d8b62ca65622797752cbe3dd
-SHA1: 858349676179a93fb683c762af36d9be8ac31512
-SHA256: 17ee7c16d1f623c4ea049e1244fad7b114e3a3debf980aa6d0f0e9a3af810ac7
+Filename: pool/main/n/nyx-player/nyx-player_0.1.0_amd64.deb
+Size: 1207948
+MD5sum: 88f5a969afc456878d646363d947e064
+SHA1: 618e4789be458e1129dc65ad467f2eaf7b731666
+SHA256: 5ac1faa2b1764295ab0880eaf8eea166dc761eda060fa44f3fbdc5254843aa94
 Section: video
 Priority: optional
 Description: Nyx Media Player
