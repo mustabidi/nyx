@@ -36,9 +36,29 @@ Nyx features a comprehensive set of keyboard shortcuts and overlays to speed up 
 ---
 
 ## 📦 Installation
-You can easily install Nyx using the pre-compiled `.deb` package provided on our GitHub Releases page.
 
-1. Download the latest `.deb` package from [Releases](https://github.com/mustabidi/nyx/releases).
+### Option 1: Install via APT Repository (Recommended)
+You can add the official Nyx APT repository to your system to easily install and receive automatic updates for Nyx.
+
+1. Download and add the repository GPG signing key:
+```sh
+sudo wget -O- https://mustabidi.github.io/nyx/nyx-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/nyx-archive-keyring.gpg
+```
+
+2. Add the repository to your system's sources list:
+```sh
+echo "deb [signed-by=/usr/share/keyrings/nyx-archive-keyring.gpg] https://mustabidi.github.io/nyx/ stable main" | sudo tee /etc/apt/sources.list.d/nyx.list
+```
+
+3. Update your package manager indices and install Nyx:
+```sh
+sudo apt update && sudo apt install nyx
+```
+
+### Option 2: Install via Standalone .deb Package
+If you prefer a standalone installation, download the compiled `.deb` package from our [Releases](https://github.com/mustabidi/nyx/releases) page.
+
+1. Download the latest `.deb` package.
 2. Install the package using `dpkg`:
 ```sh
 sudo dpkg -i nyx_0.1.0_amd64.deb
