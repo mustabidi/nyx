@@ -5,26 +5,26 @@ Origin: Nyx APT Repository
 Label: Nyx Media Player
 Suite: stable
 Codename: stable
-Date: Tue, 19 May 2026 01:18:15 GMT
+Date: Tue, 19 May 2026 01:24:29 GMT
 Architectures: amd64
 Components: main
 Description: Celestial, dark-themed modern Linux media player
 SHA256:
- 29e1228ad1abd730b21d4e3fa5c7a9332993c8d358f087b3edc0445b38b7d9d7 1426 main/binary-amd64/Packages
- e77c2ae1e61afb8d680447b1f8ba110caa3f88ad0a3e00fe6e881b25a0d60662 594 main/binary-amd64/Packages.gz
+ 6162e099f224199f6edcf40a40b9f33bc8e05b596005e9d1ca7adaf0d69e6cc6 1426 main/binary-amd64/Packages
+ 7177c71c21d4c407d66d78a3cb4ac147bc57477aaab31d6083596f4a89bb0a1d 596 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE72XhjdIud/bmxOqjLP6+IghDkfgFAmoLulcACgkQLP6+IghD
-kfjooQ//V9i7wZEQwrTK2whu54j4MCMW9ppWF6f0xkP6SlbdcEaMQ6/p9HoVGbto
-8qt1BhsqgKESWAZCxCzXT5J3WVZZd/OtaVRsfrGNYUE+I90dDfuWrVI999lrDwKb
-tZxj/vX9M8OsxQzoR9cxUk+y2UQaytcg8XBXnC2Z0iygiAV3w2jDaIk3BbUKBiQw
-ETrAmp3qCOzdtMrJOLAKRDJT3KN3o71w4uLyfGFHXAP+2MFMLBfCLUSFMM9FJdbF
-zn+WMEYHinCWTt+1JWQJiSm5qX9ROIz/4hmjw5p2bjlfKIA3/pmY39Nw02rNnDIS
-gqlkgsqLQQFl3f5f87ZSbR772D4AjgLPLrbJXwPs673s0+pN6tzORUbJjfiuLe4w
-sMAbkdM1bsMwsCXkEv0OD0MqRVQnlRkTMUQCIOuzspiYV0ovDhx2R6CnjaTO2g33
-HRQf6oujDC5udXREaPXnjMvCXeMkh9zgzEYXHWzdoJXhTv2UDOe1HSLkF9I5gPon
-LWBtVv5yaSn4jJK+wPbXF5ATwcUD5Eb4M6YBL+mpjf9U05gQBPJ7j957kWJoUDLU
-PJJ1dW8478ZZLotShm/uSnCNRiEmvG4nNey4WNb7rnYMfGP+paJZyN44YTStUHcT
-gB2nXVbrrt2kG/KNhSSF004MFcHOlGD0zHYDAaUnXVb+LgjNJtU=
-=Qdra
+iQIzBAEBCgAdFiEE72XhjdIud/bmxOqjLP6+IghDkfgFAmoLu80ACgkQLP6+IghD
+kfiSgA/9GY2YGb6vdVHcJMM/JwRDPOzrv3MpxnSSH089sE5NSDxiWN3MpS5E5B5A
+zgeUhC0VrBMkZVAIa2cw+OK73Z+LNVLTLgXZow5+pxpRd4ed3Ihz/dmbW6EixcJL
+DRwXSwa8S0EjTlZNPqx6IbU/thCX78l/b0jqdg8KnEHzgzOuCx7A0S9qu947lM7d
+3Nl8I3l1e/h8vvZAVFqTiKQdRG2WIM0Ku9X2WIevs0WKAwj/iqRAEF/xjA3V7DXO
+OSMyIYrnnJqAIwNSPLNCtyjb5ZW7tEw1X5indLB2h61S9hWP8NIXa2c0MO+fchLK
+jcV9SB/s2ZCJlxKcmDEVvaUc8VKTTuUEoxazcupwHHhGY+FeQxaC35gTVoFQwFp9
+Eznib3ri+qfhDIpxJtWFTEm3CJDzXb8PyiQyF0Ytol5sn5dQzRoq1r9yyb5H3qom
+lJ68rO9iSHxXMGSP3P44naOMJUa11oP5LZKdRjyurrekfwWdwI0h08q/RR9UI0FW
+wfUYk6z0UFQtdLR9Ip0xgPNfFvSQaXgCDsxZe9xOshYxx6xoXEuFGHowcq8oAMeW
+caRC680jP7n1nRWF0Re6PhXC1gzwxOcbst3lm1MBYkgyCl32d5tw5EGwEJ0ZiPJy
+s2xlGdfYEjRlv7qmg3M6yYNyG+wArFAMweMBswBkl8ENcdSgbAs=
+=rCxw
 -----END PGP SIGNATURE-----
