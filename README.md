@@ -52,7 +52,7 @@ echo "deb [signed-by=/usr/share/keyrings/nyx-archive-keyring.gpg] https://mustab
 
 3. Update your package manager indices and install Nyx:
 ```sh
-sudo apt update && sudo apt install nyx
+sudo apt update && sudo apt install nyx-player
 ```
 
 ### Option 2: Install via Standalone .deb Package
