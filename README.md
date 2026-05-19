@@ -1,5 +1,4 @@
 # Nyx Media Player
-[![Build Status](https://github.com/moon/nyx/actions/workflows/build.yml/badge.svg)](https://github.com/moon/nyx)
 
 **Nyx** is a celestial, dark-themed, modern Linux media player built for visual excellence and premium user experiences. Nyx brings a cohesive, night-themed celestial aesthetic forced into Libadwaita dark mode, alongside powerful background traversal automation.
 
@@ -36,7 +35,22 @@ Nyx features a comprehensive set of keyboard shortcuts and overlays to speed up 
 
 ---
 
-## 📦 Compilation and Installation
+## 📦 Installation
+You can easily install Nyx using the pre-compiled `.deb` package provided on our GitHub Releases page.
+
+1. Download the latest `.deb` package from [Releases](https://github.com/mustabidi/nyx/releases).
+2. Install the package using `dpkg`:
+```sh
+sudo dpkg -i nyx_0.1.0_amd64.deb
+```
+3. Install any missing dependencies if prompted:
+```sh
+sudo apt-get install -f
+```
+
+---
+
+## 🛠️ Compilation from Source
 
 Building Nyx from source is straightforward using the Meson build system:
 
