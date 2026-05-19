@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=io.github.moon.Nyx
-Exec=/usr/local/bin/nyx --gapplication-service

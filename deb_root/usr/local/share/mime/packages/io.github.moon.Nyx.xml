@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-  <mime-type type="application/claps">
-    <comment>Nyx Playlist</comment>
-    <glob pattern="*.claps"/>
-    <icon name="com.github.rafostar.Nyx"/>
-  </mime-type>
-</mime-info>
