@@ -1,0 +1,89 @@
+/* Nyx GTK Integration Library
+ * Copyright (C) 2024 Rafał Dzięgiel <rafostar.github@gmail.com>
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, see
+ * <https://www.gnu.org/licenses/>.
+ */
+
+#pragma once
+
+#if !defined(__NYX_GTK_INSIDE__) && !defined(NYX_GTK_COMPILATION)
+#error "Only <nyx-gtk/nyx-gtk.h> can be included directly."
+#endif
+
+#include <glib.h>
+
+/**
+ * NYX_GTK_MAJOR_VERSION:
+ *
+ * NyxGtk major version component
+ */
+#define NYX_GTK_MAJOR_VERSION            (0)
+
+/**
+ * NYX_GTK_MINOR_VERSION:
+ *
+ * NyxGtk minor version component
+ */
+#define NYX_GTK_MINOR_VERSION            (1)
+
+/**
+ * NYX_GTK_MICRO_VERSION:
+ *
+ * NyxGtk micro version component
+ */
+#define NYX_GTK_MICRO_VERSION            (0)
+
+/**
+ * NYX_GTK_VERSION:
+ *
+ * NyxGtk version
+ */
+#define NYX_GTK_VERSION                  (0.1.0)
+
+/**
+ * NYX_GTK_VERSION_S:
+ *
+ * NyxGtk version, encoded as a string
+ */
+#define NYX_GTK_VERSION_S                "0.1.0"
+
+#define NYX_GTK_ENCODE_VERSION(major,minor,micro) \
+    ((major) << 24 | (minor) << 16 | (micro) << 8)
+
+/**
+ * NYX_GTK_VERSION_HEX:
+ *
+ * NyxGtk version, encoded as an hexadecimal number, useful for integer comparisons.
+ */
+#define NYX_GTK_VERSION_HEX \
+    (NYX_GTK_ENCODE_VERSION (NYX_GTK_MAJOR_VERSION, NYX_GTK_MINOR_VERSION, NYX_GTK_MICRO_VERSION))
+
+#define NYX_GTK_CHECK_VERSION(major, minor, micro)                               \
+    (NYX_GTK_MAJOR_VERSION > (major) ||                                          \
+    (NYX_GTK_MAJOR_VERSION == (major) && NYX_GTK_MINOR_VERSION > (minor)) || \
+    (NYX_GTK_MAJOR_VERSION == (major) && NYX_GTK_MINOR_VERSION == (minor) && \
+    NYX_GTK_MICRO_VERSION >= (micro)))
+
+G_BEGIN_DECLS
+
+guint nyx_gtk_get_major_version (void);
+
+guint nyx_gtk_get_minor_version (void);
+
+guint nyx_gtk_get_micro_version (void);
+
+const gchar * nyx_gtk_get_version_s (void);
+
+G_END_DECLS

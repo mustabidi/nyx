@@ -1,0 +1,15 @@
+prefix=/usr/local
+includedir=${prefix}/include
+libdir=${prefix}/lib/x86_64-linux-gnu
+
+enhancersdir=${libdir}/nyx-0.0/enhancers
+features=discoverer mpris
+functionalities=enhancers-loader
+
+Name: nyx
+Description: Nyx playback library
+Version: 0.1.0
+Requires: gstreamer-1.0 >=  1.24.0, gstreamer-base-1.0 >=  1.24.0, gstreamer-audio-1.0 >=  1.24.0, gstreamer-tag-1.0 >=  1.24.0, gstreamer-pbutils-1.0 >=  1.24.0, glib-2.0 >=  2.76.0, gobject-2.0 >=  2.76.0, gio-2.0 >=  2.76.0
+Requires.private: libpeas-2, gio-unix-2.0 >=  2.76.0
+Libs: -L${libdir} -lnyx-0.0
+Cflags: -I${includedir}/nyx-0.0

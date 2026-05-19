@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+echo "Running post-removal cleanup..."
+
+# Recompile GSettings schemas
+if [ -x /usr/bin/glib-compile-schemas ]; then
+    glib-compile-schemas /usr/local/share/glib-2.0/schemas || true
+fi
+
+# Update desktop database
+if [ -x /usr/bin/update-desktop-database ]; then
+    update-desktop-database -q /usr/local/share/applications || true
+fi
+
+# Update icon cache
+if [ -x /usr/bin/gtk4-update-icon-cache ]; then
+    gtk4-update-icon-cache -q -t -f /usr/local/share/icons/hicolor || true
+fi
+
+# Run ldconfig
+ldconfig || true
+
+echo "Post-removal cleanup complete."
